@@ -14,8 +14,8 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  padding-left: 12rem;
-  padding-right: 12rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 h1 {
@@ -24,8 +24,6 @@ h1 {
   font-size: 4rem;
   font-weight: 300;
   letter-spacing: 0.1rem;
-  padding-top: 3.5rem;
-  padding-bottom: 2rem;
 }
 
 h2 {
@@ -48,5 +46,17 @@ p, nav {
 a {
   color: #263358;
   padding-right: 0.25rem;
-  padding-left: 0.25rem; 
+  padding-left: 0.25rem;
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
+
+  h1 {
+    padding-top: 3.5rem;
+    padding-bottom: 2rem;
+  }
 }
