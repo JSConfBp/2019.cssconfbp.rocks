@@ -1,58 +1,157 @@
-/*
+@import url('https://fonts.googleapis.com/css?family=Khula');
 
-  Want to create your own CSS?
-  -> design our site for a day!
-  send a PR with your styles at
-  https://github.com/bpweb/cssconfbp17
-  -> submit a talk proposal!
-  our CFP is open at
-  https://goo.gl/forms/8eOK2syojrn0C2eh1
+:root {
+  --black: hsl(0, 0%, 13%);
+  --red: hsl(359, 90%, 66%);
+  --yellow: hsl(53, 99%, 65%);
+  --u: 1rem;
+}
 
-*/
+html { box-sizing: border-box; }
+
+*,
+*::before,
+*::after { box-sizing: inherit; }
 
 body {
-  font-family: Comic Sans, Comic Sans MS;
-  margin: 0;
-  height: 100vh;
+  background-color: var(--yellow, hsl(53, 99%, 65%));
+  color: var(--black, hsl(0, 0%, 13%));
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  font-family: 'Khula', sans-serif;
+  height: 100vh;
+  margin: 0;
+  padding: calc(var(--u, 1rem) * 2);
+}
+
+h1::after,
+h2::after,
+h3::after {
+  position: absolute;
+  content: '̚';
+  right: 0;
+  top: 0;
+  color: var(--red, hsl(359, 90%, 66%));
+  font-size: calc(var(--u, 1rem) * 2.5);
+  width: .7rem;
+}
+
+h1,
+h2,
+h3,
+p,
+ul { margin-top: 0; }
+
+h1,
+h2,
+h3 {
+  border-bottom: calc(var(--u, 1rem) * .125) solid black;
+  margin-bottom: calc(var(--u, 1rem) * .5);
+  position: relative;
+  padding-right: calc(var(--u, 1rem) * 2);
 }
 
 h1 {
-  color: red;
-}
-
-@keyframes marquee {
-  0%,
-  50%,
-  100% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(-50vw);
-  }
-  50% {
-    transform: translateX(50vw);
-  }
+  font-size: 2.8em;
+  line-height: 1.2;
 }
 
 h2 {
-  animation: marquee 10s infinite;
+  font-size: 2em;
+  line-height: 1.3;
 }
 
-@keyframes roll {
-  0%,
-  100% {
-    transform: rotate(0);
-  }
-  50% {
-    transform: rotate(90deg);
+h3 {
+  font-size: 1.6em;
+  line-height: 1.3;
+}
+
+p {
+  font-size: .9em;
+  font-weight: 500;
+  letter-spacing: .04em;
+  line-height: 1.33;
+  margin-bottom: calc(var(--u, 1rem) * 5);
+  max-width: 26em;
+  text-transform: uppercase;
+}
+
+nav { margin-top: auto; }
+
+a {
+  color: var(--red, hsl(359, 90%, 66%));
+  font-size: .9em;
+  font-weight: 700;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: var(--u);
+}
+
+a::after {
+  background-color: currentColor;
+  bottom: calc(var(--u, 1rem) * .1);
+  content: '';
+  height: calc(var(--u, 1rem) * .0625);
+  left: 0;
+  margin-right: var(--u, 1rem);
+  position: absolute;
+  transform: scaleX(0);
+  transition: transform .33s ease-in-out;
+  width: 100%;
+}
+
+a:hover::after { transform: scaleX(1); }
+
+p > a { margin-right: 0; }
+
+ul {
+  padding-left: 0;
+  list-style-type: none;;
+  margin-bottom: calc(var(--u, 1rem) * 5);
+}
+
+li {
+  position: relative;
+  padding-left: calc(var(--u, 1rem) * 1.2);
+}
+
+li::before {
+  position: absolute;
+  content: '■';
+  left: 0;
+  color: var(--red);
+}
+
+q {
+  font-size: 2.6em;
+  margin: 0  auto calc(var(--u, 1rem) * 5);
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-left: calc(var(--u, 1rem) * 2);
+  padding-right: calc(var(--u, 1rem) * 2);
+  text-align: center;
+  max-width: 22em;
+  line-height: 1.2;
+}
+
+@media screen and (min-width: 43.75em) {
+  q {
+    font-size: 3em;
+    padding-left: calc(var(--u, 1rem) * 4.4);
+    padding-right: calc(var(--u, 1rem) * 4.4);
   }
 }
 
-a:hover {
-  animation: roll 1.5s ease-out 1s infinite;
-  display: inline-block;
+q::before,
+q::after {
+  color: var(--red, 359, 90%, 66%);
+  position: absolute;
+  font-size: 3em;
+  top: calc(var(--u, 1rem) * -3.6);
 }
+
+q::before { left: 0; }
+
+q::after { right: 0; }
