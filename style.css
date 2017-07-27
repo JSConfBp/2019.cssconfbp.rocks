@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin+Condensed:400,500,700|Playfair+Display:400,700|Sonsie+One');
+
 /*
 
   Want to create your own CSS?
@@ -11,48 +13,103 @@
 */
 
 body {
-  font-family: Comic Sans, Comic Sans MS;
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    background-color: #cfd09c;
+    background-image: url(bg.jpg);
+    background-repeat: repeat;
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 25px;
+    margin: 15px;
+    text-align: center;
 }
-
 h1 {
-  color: red;
+    color: #ec8411;
+    font-size: 38px;
+    font-family: 'Sonsie One', cursive;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 1px #222;
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
 }
-
-@keyframes marquee {
-  0%,
-  50%,
-  100% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(-50vw);
-  }
-  50% {
-    transform: translateX(50vw);
-  }
-}
-
 h2 {
-  animation: marquee 10s infinite;
+    color: #de341a;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-shadow: 2px 2px 1px #3b674a;
+    text-transform: uppercase;
+}
+h3 {
+    color: #de341a;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 1px #555;
+    text-transform: uppercase;
+}
+p {
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 760px;
+}
+nav {
+    margin-top: 20px;
+}
+a {
+    color: #8a4619;
+    margin: 0 4px;
+}
+    a:hover {
+        color: #542b10;
+        text-decoration: none;
+    }
+section {
+    margin: 0 auto;
+    max-width: 760px;
+    text-align: left;
+}
+    section p {
+        font-size: 20px;
+        font-weight: 400;
+    }
+ul {
+    font-size: 20px;
+}
+q {
+    color: #763110;
+    display: block;
+    font-family: 'Sonsie One', cursive;
+    font-size: 28px;
+    margin: 30px 0;
 }
 
-@keyframes roll {
-  0%,
-  100% {
-    transform: rotate(0);
-  }
-  50% {
-    transform: rotate(90deg);
-  }
+@media screen and (min-width: 700px) {
+    h1 {
+        font-size: 60px;
+        margin-bottom: 60px;
+        padding-top: 10%;
+    }
+    h2 {
+        font-size: 38px;
+    }
 }
-
-a:hover {
-  animation: roll 1.5s ease-out 1s infinite;
-  display: inline-block;
+@media print {
+    a {
+        text-decoration: none;
+    }
+    nav a {
+        display: block;
+    }
+    nav a::after, a[href^="http"]::after {
+        color: #786457;
+        content: ' (Link to: ' attr(href) ')';
+        font-size: 15px;
+    }
+    q {
+        font-size: 20px;
+    }
+    h2, h3 {
+        text-shadow: none;
+    }
 }
