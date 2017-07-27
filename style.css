@@ -10,53 +10,49 @@
 
 */
 
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans');
-
 body {
-  font-family: "Open Sans", sans-serif;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  font-family: Comic Sans, Comic Sans MS;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
-  color: #263358;
-  font-family: "Abril Fatface", sans-serif;
-  font-size: 4rem;
-  font-weight: 300;
-  letter-spacing: 0.1rem;
+  color: red;
+}
+
+@keyframes marquee {
+  0%,
+  50%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-50vw);
+  }
+  50% {
+    transform: translateX(50vw);
+  }
 }
 
 h2 {
-  color: #b28a4a;
-  font-weight: 400;
-  font-style: italic;
-  letter-spacing: 0.1rem;
+  animation: marquee 10s infinite;
 }
 
-h3 {
-  color: #b28a4a;
-  font-style: italic;
-  font-weight: 300;
-}
-
-p, nav {
-  font-weight: 200;
-}
-
-a {
-  color: #263358;
-  padding-right: 0.25rem;
-  padding-left: 0.25rem;
-}
-
-@media screen and (min-width: 900px) {
-  body {
-    padding-left: 12rem;
-    padding-right: 12rem;
+@keyframes roll {
+  0%,
+  100% {
+    transform: rotate(0);
   }
-
-  h1 {
-    padding-top: 3.5rem;
-    padding-bottom: 2rem;
+  50% {
+    transform: rotate(90deg);
   }
+}
+
+a:hover {
+  animation: roll 1.5s ease-out 1s infinite;
+  display: inline-block;
 }
