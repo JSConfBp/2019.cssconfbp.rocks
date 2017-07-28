@@ -24,7 +24,7 @@ body {
     /* Photo by Daniel Olah on Unsplash */
   background-size: cover, cover;
   background-repeat: none;
-  height: 100vh;
+  min-height: 100vh;
   overflow-x: hidden;
 }
 
