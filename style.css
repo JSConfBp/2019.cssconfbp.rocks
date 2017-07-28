@@ -24,7 +24,8 @@ body {
     /* Photo by Daniel Olah on Unsplash */
   background-size: cover, cover;
   background-repeat: none;
-  height: 100vh;
+  background-attachment: fixed;
+  min-height: 100vh;
   overflow-x: hidden;
 }
 
@@ -39,35 +40,40 @@ h1 {
   background-color: rgba(0,49,56,.5);
 }
 
-p {
+
+h2, section, p, q {
+  padding: 0 20px;
+}
+
+h1 ~ p {
   text-align: center;
   font-size: 22px;
   letter-spacing: 3px;
   padding: 0 20px;
 }
 
-h2 {
+h1 ~ h2 {
   text-transform: uppercase;
   text-align: center;
   margin: 0;
   padding: 0 20px;
 }
 
-p ~ p {
+h1 ~ p ~ p {
   font-size: 12px;
   text-transform: lowercase;
   margin-top: 0;
 }
 
-p ~ p:before {
+h1 ~ p ~ p:before {
   content: "(";
 }
 
-p ~ p:after {
+h1 ~ p ~ p:after {
   content: ")";
 }
 
-nav {
+h1 ~ nav {
   position: absolute;
   top: 0;
   left: 0;
@@ -77,18 +83,22 @@ nav {
   text-align: center;
 }
 
-a {
+h1 ~ a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
 }
 
-a:not(:last-child) {
+h1 ~ a:not(:last-child) {
   margin-right: 20px;
 }
 
-a:not(:last-child):after {
+h1 ~ a:not(:last-child):after {
   content: "•";
   margin-left: 20px;
+}
+
+a { 
+  color: white;
 }
