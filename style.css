@@ -143,15 +143,22 @@ a::after {
     transition-timing-function: ease-out;
 }
 
-a:hover {
+a:hover,
+a:active,
+a:focus {
     color: #fff;
+    outline: none;
 }
 
-a:hover::before {
+a:hover::before,
+a:active::before,
+a:focus::before {
     height: 90%;
 }
 
-a:hover::after {
+a:hover::after,
+a:active::after,
+a:focus::after {
     height: 90%;
 }
 
