@@ -99,15 +99,30 @@ h1:after {
   }
 }
 
+p, h2, h3, ul {
+  padding: 1rem 1rem;
+}
+
+@media (min-width: 500px) {
+  p, h2, h3, ul {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
 p {
-  padding: 1rem 2rem;
+  line-height: 1.6;
 }
 
 h2 {
   background-color: #ff0000;
   color: #ffffff;
   margin: 0;
-  padding: 1rem 2rem;
+}
+
+h3 {
+  background-color: lime;
+  margin: 1rem;
 }
 
 nav {
@@ -118,11 +133,23 @@ a {
   align-items: center;
   counter-increment: page;
   display: flex;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   position: relative;
   text-decoration: none;
   text-transform: capitalize;
 }
+
+@media (min-width: 500px) {
+  h3 {
+    margin: 2rem;
+  }
+
+  a {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
 
 a:link, a:visited {
   color: #1e00f1;
@@ -156,4 +183,76 @@ a::before {
 a:hover::before, 
 a:focus::before {
   color: #ffffff;
+}
+
+q {
+  background-color: #1e00f1;
+  display: block;
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding: 2rem;
+  margin: 1rem;
+}
+
+@media (min-width: 500px) {
+  q {
+    margin: 2rem;
+  }
+}
+
+
+@media (min-width: 500px) {
+  q {
+    font-size: 2rem;
+  }
+}
+
+section:first-of-type h3 {
+  padding: 1rem 0;
+  margin-bottom: 0;
+  background-color: transparent;
+  animation-name: flash;
+  animation-duration: 0.2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+}
+
+@keyframes flash {
+    from {color: pink;}
+    to {color: black;}
+}
+
+ul {
+  margin: 0 -2rem;
+  list-style: none;
+  background-color: pink;
+  counter-reset: page 5;
+
+  border: solid #ffffff;
+  border-width: 0 2rem 2rem;
+}
+
+ul a {
+  padding-left: 0;
+}
+
+ul a:hover {
+  background-color: #c78e98;
+}
+
+@media (min-width: 770px) {
+  section:first-of-type h3 {
+    text-align: right;
+  }
+
+  ul {
+    margin: 0;
+    float: right;
+  }
+}
+
+section:nth-of-type(2) h3 {
+  margin-top: 0;
 }
