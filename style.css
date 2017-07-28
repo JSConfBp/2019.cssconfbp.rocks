@@ -83,18 +83,18 @@ h1 ~ nav {
   text-align: center;
 }
 
-h1 ~ a {
+h1 ~ nav a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
 }
 
-h1 ~ a:not(:last-child) {
+h1 ~ nav a:not(:last-child) {
   margin-right: 20px;
 }
 
-h1 ~ a:not(:last-child):after {
+h1 ~ nav a:not(:last-child):after {
   content: "•";
   margin-left: 20px;
 }
