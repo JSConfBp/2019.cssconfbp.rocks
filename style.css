@@ -10,160 +10,126 @@
 
 */
 
-@import url('https://fonts.googleapis.com/css?family=Khula');
-
-:root {
-  --black: hsl(0, 0%, 13%);
-  --red: hsl(359, 90%, 66%);
-  --yellow: hsl(53, 99%, 65%);
-  --u: 1rem;
-}
-
-html { box-sizing: border-box; }
-
 *,
-*::before,
-*::after { box-sizing: inherit; }
+:after,
+:before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+html {
+  font-size: 87.5%;
+  line-height: 1.15;
+  /* 1 */
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  border-left: 12vh solid black;
+  background-color: white; }
+  @media screen and (min-width: 640px) {
+    html {
+      font-size: 100%; } }
+  @media screen and (min-width: 780px) {
+    html {
+      font-size: 125%; } }
+  @media screen and (min-width: 1280px) {
+    html {
+      font-size: 150%; } }
 
 body {
-  background-color: var(--yellow, hsl(53, 99%, 65%));
-  color: var(--black, hsl(0, 0%, 13%));
-  display: flex;
-  flex-direction: column;
-  font-family: 'Khula', sans-serif;
-  height: 100vh;
-  margin: 0;
-  padding: calc(var(--u, 1rem) * 2);
-}
+  line-height: 1.5;
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 25vh 5vw 15vh 5vw;
+  color: #2d2d2d; }
 
-h1::after,
-h2::after,
-h3::after {
-  position: absolute;
-  content: '̚';
-  right: 0;
-  top: 0;
-  color: var(--red, hsl(359, 90%, 66%));
-  font-size: calc(var(--u, 1rem) * 2.5);
-  width: .7rem;
-}
+a {
+  color: inherit;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip: ink; }
+  a:hover, a:focus {
+    color: red; }
 
 h1,
 h2,
 h3,
-p,
-ul { margin-top: 0; }
-
-h1,
-h2,
-h3 {
-  border-bottom: calc(var(--u, 1rem) * .125) solid black;
-  margin-bottom: calc(var(--u, 1rem) * .5);
-  position: relative;
-  padding-right: calc(var(--u, 1rem) * 2);
-}
+h4,
+h5,
+h6 {
+  margin: 0 0 .5rem 0; }
 
 h1 {
-  font-size: 2.8em;
-  line-height: 1.2;
-}
+  font-size: 2rem;
+  font-size: 4vh;
+  line-height: 3;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vh;
+  margin: 0 0;
+  padding: 0 .5em;
+  -webkit-transform: rotate(-90deg) translateX(-3em);
+          transform: rotate(-90deg) translateX(-3em);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  opacity: .875;
+  color: white; }
 
 h2 {
-  font-size: 2em;
-  line-height: 1.3;
-}
+  font-size: 2.5rem;
+  line-height: 1.2;
+  max-width: 14em;
+  margin: -.75rem 0 0;
+  padding: 0; }
 
-h3 {
-  font-size: 1.6em;
-  line-height: 1.3;
-}
+p,
+q {
+  margin: 0 0 1rem; }
 
-p {
-  font-size: .9em;
-  font-weight: 500;
-  letter-spacing: .04em;
-  line-height: 1.33;
-  margin-bottom: calc(var(--u, 1rem) * 5);
-  max-width: 26em;
-  text-transform: uppercase;
-}
+ul,
+ol {
+  margin: 0 0 1rem 1.125em;
+  padding: 0;
+  list-style: none; }
+  ul > li,
+  ol > li {
+    margin: 0;
+    padding: 0 0 .5em;
+    text-indent: -1.125em; }
+    ul > li:before,
+    ol > li:before {
+      display: inline-block;
+      width: .4em;
+      height: .4em;
+      margin-right: 1.333em;
+      content: '';
+      -webkit-transform: translateY(-0.125em);
+              transform: translateY(-0.125em);
+      background-color: red; }
 
-nav { margin-top: auto; }
-
-a {
-  color: var(--red, hsl(359, 90%, 66%));
-  font-size: .9em;
-  font-weight: 700;
-  position: relative;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin-right: var(--u);
-}
-
-a::after {
-  background-color: currentColor;
-  bottom: calc(var(--u, 1rem) * .1);
-  content: '';
-  height: calc(var(--u, 1rem) * .0625);
-  left: 0;
-  margin-right: var(--u, 1rem);
-  position: absolute;
-  transform: scaleX(0);
-  transition: transform .33s ease-in-out;
-  width: 100%;
-}
-
-a:hover::after { transform: scaleX(1); }
-
-p > a { margin-right: 0; }
-
-ul {
-  padding-left: 0;
-  list-style-type: none;;
-  margin-bottom: calc(var(--u, 1rem) * 5);
-}
-
-li {
-  position: relative;
-  padding-left: calc(var(--u, 1rem) * 1.2);
-}
-
-li::before {
-  position: absolute;
-  content: '■';
-  left: 0;
-  color: var(--red);
-}
+nav {
+  font-size: .75rem;
+  font-style: italic;
+  line-height: 1;
+  padding: 1.25rem 0 0;
+  text-transform: capitalize;
+  border-top: .05rem solid black; }
+  nav a {
+    display: inline-block;
+    margin: 0 .125em .5em 0;
+    padding: .5em .75em;
+    text-decoration: none;
+    color: white;
+    background-color: black; }
+    nav a:hover, nav a:focus {
+      color: white;
+      background-color: red; }
 
 q {
-  font-size: 2.6em;
-  margin: 0  auto calc(var(--u, 1rem) * 5);
-  position: relative;
-  text-transform: uppercase;
-  font-weight: 700;
-  padding-left: calc(var(--u, 1rem) * 2);
-  padding-right: calc(var(--u, 1rem) * 2);
-  text-align: center;
-  max-width: 22em;
-  line-height: 1.2;
-}
+  font-size: 1.125rem;
+  font-style: italic;
+  display: block; }
 
-@media screen and (min-width: 43.75em) {
-  q {
-    font-size: 3em;
-    padding-left: calc(var(--u, 1rem) * 4.4);
-    padding-right: calc(var(--u, 1rem) * 4.4);
-  }
-}
-
-q::before,
-q::after {
-  color: var(--red, 359, 90%, 66%);
-  position: absolute;
-  font-size: 3em;
-  top: calc(var(--u, 1rem) * -3.6);
-}
-
-q::before { left: 0; }
-
-q::after { right: 0; }
+/* by https://github.com/ceto */
