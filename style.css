@@ -1,61 +1,44 @@
-/*
+/**
+ * Theme:  Writertype
+ * Author: https://github.com/gnclmorais
+ */
 
-   __                        
-  / ()  ()  ()             _ 
- |      /\  /\    /|/|/|  |/ 
-  \___//(_)/(_)    | | |_/|_/
-                             
-
-  Do you have a few lines of CSS to spare?
-  -> design our site for a day!
-  send a PR with your styles at
-  https://github.com/bpweb/cssconfbp17
-  or tweet us a codepen link at
-  @cssconfbudapest !
-
-*/
+@import url('https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight:700');
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
 
 *,
-:after,
-:before {
+::after,
+::before {
   -webkit-box-sizing: inherit;
-          box-sizing: inherit; }
+          box-sizing: inherit;
+}
 
 html {
-  font-size: 87.5%;
-  line-height: 1.15;
-  /* 1 */
-  position: relative;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  border-left: 12vh solid black;
-  background-color: white; }
-  @media screen and (min-width: 640px) {
-    html {
-      font-size: 100%; } }
-  @media screen and (min-width: 780px) {
-    html {
-      font-size: 125%; } }
-  @media screen and (min-width: 1280px) {
-    html {
-      font-size: 150%; } }
+  font-family: 'Special Elite', cursive;
+  font-size: 22px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  background-color: #ffe;
+  height: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
 body {
-  line-height: 1.5;
-  max-width: 60rem;
-  margin: 0 auto;
-  padding: 25vh 5vw 15vh 5vw;
-  color: #2d2d2d; }
+  border-left: 2px dashed black;
+  padding: 50px 40px;
+  margin: 0;
+}
 
 a {
-  color: inherit;
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip: ink; }
-  a:hover, a:focus {
-    color: red; }
+  color: darkkhaki;
+  text-decoration-skip: ink;
+}
+a:hover {
+  color: goldenrod;
+  text-decoration-style: wavy;
+}
 
 h1,
 h2,
@@ -63,78 +46,77 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0 0 .5rem 0; }
+  margin-top: 0;
+  margin-bottom: .5em;
+  line-height: 1em;
+}
 
 h1 {
-  font-size: 2rem;
-  font-size: 4vh;
-  line-height: 3;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100vh;
-  margin: 0 0;
-  padding: 0 .5em;
-  -webkit-transform: rotate(-90deg) translateX(-3em);
-          transform: rotate(-90deg) translateX(-3em);
-  -webkit-transform-origin: left top;
-          transform-origin: left top;
-  opacity: .875;
-  color: white; }
-
-h2 {
-  font-size: 2.5rem;
-  line-height: 1.2;
-  max-width: 14em;
-  margin: -.75rem 0 0;
-  padding: 0; }
-
-p,
-q {
-  margin: 0 0 1rem; }
-
-ul,
-ol {
-  margin: 0 0 1rem 1.125em;
-  padding: 0;
-  list-style: none; }
-  ul > li,
-  ol > li {
-    margin: 0;
-    padding: 0 0 .5em;
-    text-indent: -1.125em; }
-    ul > li:before,
-    ol > li:before {
-      display: inline-block;
-      width: .4em;
-      height: .4em;
-      margin-right: 1.333em;
-      content: '';
-      -webkit-transform: translateY(-0.125em);
-              transform: translateY(-0.125em);
-      background-color: red; }
+  font-family: 'Zilla Slab Highlight', cursive;
+  margin-bottom: 100px;
+}
 
 nav {
-  font-size: .75rem;
-  font-style: italic;
-  line-height: 1;
-  padding: 1.25rem 0 0;
+  margin-top: 100px;
+}
+
+nav a {
+  text-decoration: none;
+  position: relative;
+  padding: 5px 5px 1px;
+  margin-bottom: 10px;
   text-transform: capitalize;
-  border-top: .05rem solid black; }
-  nav a {
-    display: inline-block;
-    margin: 0 .125em .5em 0;
-    padding: .5em .75em;
-    text-decoration: none;
-    color: white;
-    background-color: black; }
-    nav a:hover, nav a:focus {
-      color: white;
-      background-color: red; }
+  color: #fff;
+  display: inline-block;
+  -webkit-transition: all .2s;
+     -moz-transition: all .2s;
+       -o-transition: all .2s;
+          transition: all .2s;
+}
+
+nav a:hover {
+  color: #333;
+}
+
+nav a + a {
+  margin-left: 5px
+}
+
+nav a::before {
+  background: #333;
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: skew(-10deg);
+     -moz-transform: skew(-10deg);
+       -o-transform: skew(-10deg);
+          transform: skew(-10deg);
+  -webkit-transition: all .2s;
+     -moz-transition: all .2s;
+       -o-transition: all .2s;
+          transition: all .2s;
+}
+
+nav a:hover::before {
+  background-color: gold;
+  border: 1px dashed black;
+  -webkit-transform: skew(5deg, 2deg);
+     -moz-transform: skew(5deg, 3deg);
+       -o-transform: skew(5deg, 3deg);
+          transform: skew(5deg, 3deg);
+}
 
 q {
-  font-size: 1.125rem;
-  font-style: italic;
-  display: block; }
+  display: block;
+  text-align: center;
+  margin: 40px 0;
+  color: #666;
+}
 
-/* by https://github.com/ceto */
+section {
+  margin: 40px 0;
+}
