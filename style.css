@@ -1,16 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Cabin+Condensed:400,500,700|Playfair+Display:400,700|Sonsie+One');
-
 /*
 
-  Want to create your own CSS?
+   __                        
+  / ()  ()  ()             _ 
+ |      /\  /\    /|/|/|  |/ 
+  \___//(_)/(_)    | | |_/|_/
+                             
+
+  Do you have a few lines of CSS to spare?
   -> design our site for a day!
   send a PR with your styles at
   https://github.com/bpweb/cssconfbp17
-  -> submit a talk proposal!
-  our CFP is open at
-  https://goo.gl/forms/8eOK2syojrn0C2eh1
+  or tweet us a codepen link at
+  @cssconfbudapest !
 
 */
+
+@import url('https://fonts.googleapis.com/css?family=Cabin+Condensed:400,500,700|Playfair+Display:400,700|Sonsie+One');
 
 body {
     background-color: #cfd09c;
