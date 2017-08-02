@@ -15,126 +15,106 @@
 
 */
 
-*,
-:after,
-:before {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit; }
-
-html {
-  font-size: 87.5%;
-  line-height: 1.15;
-  /* 1 */
-  position: relative;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  border-left: 12vh solid black;
-  background-color: white; }
-  @media screen and (min-width: 640px) {
-    html {
-      font-size: 100%; } }
-  @media screen and (min-width: 780px) {
-    html {
-      font-size: 125%; } }
-  @media screen and (min-width: 1280px) {
-    html {
-      font-size: 150%; } }
+@import url('https://fonts.googleapis.com/css?family=Cabin+Condensed:400,500,700|Playfair+Display:400,700|Sonsie+One');
 
 body {
-  line-height: 1.5;
-  max-width: 60rem;
-  margin: 0 auto;
-  padding: 25vh 5vw 15vh 5vw;
-  color: #2d2d2d; }
-
-a {
-  color: inherit;
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip: ink; }
-  a:hover, a:focus {
-    color: red; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0 0 .5rem 0; }
-
+    background-color: #cfd09c;
+    background-image: url(bg.jpg);
+    background-repeat: repeat;
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 25px;
+    margin: 15px;
+    text-align: center;
+}
 h1 {
-  font-size: 2rem;
-  font-size: 4vh;
-  line-height: 3;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100vh;
-  margin: 0 0;
-  padding: 0 .5em;
-  -webkit-transform: rotate(-90deg) translateX(-3em);
-          transform: rotate(-90deg) translateX(-3em);
-  -webkit-transform-origin: left top;
-          transform-origin: left top;
-  opacity: .875;
-  color: white; }
-
+    color: #ec8411;
+    font-size: 38px;
+    font-family: 'Sonsie One', cursive;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 1px #222;
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
 h2 {
-  font-size: 2.5rem;
-  line-height: 1.2;
-  max-width: 14em;
-  margin: -.75rem 0 0;
-  padding: 0; }
-
-p,
-q {
-  margin: 0 0 1rem; }
-
-ul,
-ol {
-  margin: 0 0 1rem 1.125em;
-  padding: 0;
-  list-style: none; }
-  ul > li,
-  ol > li {
-    margin: 0;
-    padding: 0 0 .5em;
-    text-indent: -1.125em; }
-    ul > li:before,
-    ol > li:before {
-      display: inline-block;
-      width: .4em;
-      height: .4em;
-      margin-right: 1.333em;
-      content: '';
-      -webkit-transform: translateY(-0.125em);
-              transform: translateY(-0.125em);
-      background-color: red; }
-
+    color: #de341a;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-shadow: 2px 2px 1px #3b674a;
+    text-transform: uppercase;
+}
+h3 {
+    color: #de341a;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 1px #555;
+    text-transform: uppercase;
+}
+p {
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 760px;
+}
 nav {
-  font-size: .75rem;
-  font-style: italic;
-  line-height: 1;
-  padding: 1.25rem 0 0;
-  text-transform: capitalize;
-  border-top: .05rem solid black; }
-  nav a {
-    display: inline-block;
-    margin: 0 .125em .5em 0;
-    padding: .5em .75em;
-    text-decoration: none;
-    color: white;
-    background-color: black; }
-    nav a:hover, nav a:focus {
-      color: white;
-      background-color: red; }
-
+    margin-top: 20px;
+}
+a {
+    color: #8a4619;
+    margin: 0 4px;
+}
+    a:hover {
+        color: #542b10;
+        text-decoration: none;
+    }
+section {
+    margin: 0 auto;
+    max-width: 760px;
+    text-align: left;
+}
+    section p {
+        font-size: 20px;
+        font-weight: 400;
+    }
+ul {
+    font-size: 20px;
+}
 q {
-  font-size: 1.125rem;
-  font-style: italic;
-  display: block; }
+    color: #763110;
+    display: block;
+    font-family: 'Sonsie One', cursive;
+    font-size: 28px;
+    margin: 30px 0;
+}
 
-/* by https://github.com/ceto */
+@media screen and (min-width: 700px) {
+    h1 {
+        font-size: 60px;
+        margin-bottom: 60px;
+        padding-top: 10%;
+    }
+    h2 {
+        font-size: 38px;
+    }
+}
+@media print {
+    a {
+        text-decoration: none;
+    }
+    nav a {
+        display: block;
+    }
+    nav a::after, a[href^="http"]::after {
+        color: #786457;
+        content: ' (Link to: ' attr(href) ')';
+        font-size: 15px;
+    }
+    q {
+        font-size: 20px;
+    }
+    h2, h3 {
+        text-shadow: none;
+    }
+}
