@@ -1,10 +1,26 @@
+/*
+
+   __                        
+  / ()  ()  ()             _ 
+ |      /\  /\    /|/|/|  |/ 
+  \___//(_)/(_)    | | |_/|_/
+                             
+
+  Do you have a few lines of CSS to spare?
+  -> design our site for a day!
+  send a PR with your styles at
+  https://github.com/bpweb/cssconfbp17
+  or tweet us a codepen link at
+  @cssconfbudapest !
+
+*/
+
 /**
  * Theme:  Writertype
  * Author: https://github.com/gnclmorais
  */
 
-@import url('https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight:700');
-@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+@import url('https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight:700|Special+Elite');
 
 *,
 ::after,
