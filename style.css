@@ -15,6 +15,11 @@ or tweet us a codepen link at
 
 */
 
+/**
+ * Theme:  KILL BILL
+ * Author: https://github.com/sandrina-p @a_sandrina_p
+ */
+
 @import url(https://fonts.googleapis.com/css?family=Anton);/* RESETS */
 
 * {
@@ -64,7 +69,9 @@ or tweet us a codepen link at
 .date::before,
 .date::after,
 .title::before,
-.title::after {
+.title::after,
+section:first-of-type::before,
+section:first-of-type::after {
     content: '';
     position: fixed;
     top: -120%;
@@ -75,13 +82,15 @@ or tweet us a codepen link at
     animation: line 10s infinite reverse;
 }
 
-.date::after {
+.date::after,
+section:first-of-type::after {
     -webkit-animation-delay: 625ms;
     animation-delay: 625ms;
     right: 5vw;
 }
 
-.date::before {
+.date::before,
+section:first-of-type::before {
     -webkit-animation-delay: 850ms;
     animation-delay: 850ms;
     right: 7.5vw;
@@ -140,7 +149,7 @@ or tweet us a codepen link at
     position: fixed;
     top: -10vh;
     height: 120vh;
-    width: 20%;
+    width: 20.1vw;
     background-color: #ffde00;
     -webkit-animation: openUp 800ms forwards;
     animation: openUp 800ms forwards;
@@ -150,13 +159,13 @@ or tweet us a codepen link at
 .body-pattern::before {
     -webkit-animation-delay: 570ms;
     animation-delay: 570ms;
-    left: -15%;
+    left: -15vw;
 }
 
 .body-pattern::after {
     -webkit-animation-delay: 500ms;
     animation-delay: 500ms;
-    left: 5%;
+    left: 5vw;
 }
 
 .europe::before, .page-coc > p:first-of-type::before {
@@ -249,7 +258,7 @@ or tweet us a codepen link at
     text-shadow: 0.3rem 0.3rem 0 #000;
     font-weight: 400;
     font-size: 6.5rem;
-    max-width: 80vw;
+    max-width: 79vw;
     text-transform: uppercase;
 }
 
