@@ -16,9 +16,9 @@ or tweet us a codepen link at
 */
 
 /**
- * Theme:  KILL BILL
- * Author: https://github.com/sandrina-p @a_sandrina_p
- */
+* Theme:  KILL BILL
+* Author: https://github.com/sandrina-p @a_sandrina_p
+*/
 
 @import url(https://fonts.googleapis.com/css?family=Anton);/* RESETS */
 
@@ -74,7 +74,7 @@ section:first-of-type::before,
 section:first-of-type::after {
     content: '';
     position: fixed;
-    top: -120%;
+    top: -120vh;
     height: 120vh;
     width: 2.5vw;
     background-color: #ffde00;
@@ -82,15 +82,13 @@ section:first-of-type::after {
     animation: line 10s infinite reverse;
 }
 
-.date::after,
-section:first-of-type::after {
+.date::after, section:first-of-type::after {
     -webkit-animation-delay: 625ms;
     animation-delay: 625ms;
     right: 5vw;
 }
 
-.date::before,
-section:first-of-type::before {
+.date::before, section:first-of-type::before {
     -webkit-animation-delay: 850ms;
     animation-delay: 850ms;
     right: 7.5vw;
@@ -371,6 +369,8 @@ a {
     font-size: 1.2rem;
     text-shadow: 0 0 0 #000;
     text-transform: uppercase;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
     -webkit-transition: text-shadow 100ms, -webkit-transform 100ms;
     transition: text-shadow 100ms, -webkit-transform 100ms;
     transition: text-shadow 100ms, transform 100ms;
@@ -465,6 +465,7 @@ a:focus {
 }
 
 /* ONLY ON PAGE-COC */
+
 .page-coc p,
 .page-coc q,
 .page-coc ul {
@@ -497,5 +498,6 @@ a:focus {
     color: #000;
     font-size: 2rem;
     line-height: 1.2;
+    letter-spacing: 1px;
     text-shadow: 0.1rem 0.1rem 0 #ffde00;
 }
