@@ -1,4 +1,27 @@
-@import url(https://fonts.googleapis.com/css?family=Anton);/* RESETS */
+/*
+
+ __
+ / ()  ()  ()             _
+ |      /\  /\    /|/|/|  |/
+ \___//(_)/(_)    | | |_/|_/
+
+
+ Do you have a few lines of CSS to spare?
+ -> design our site for a day!
+ send a PR with your styles at
+ https://github.com/bpweb/cssconfbp17
+ or tweet us a codepen link at
+ @cssconfbudapest !
+
+ */
+
+ /**
+ * Theme:  KILL BILL
+ * Author: https://github.com/sandrina-p @a_sandrina_p
+ */
+
+
+ @import url(https://fonts.googleapis.com/css?family=Anton);/* RESETS */
 
 * {
     -webkit-box-sizing: border-box;
