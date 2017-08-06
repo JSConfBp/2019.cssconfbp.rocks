@@ -1,25 +1,3 @@
-/*
-
-__
-/ ()  ()  ()             _
-|      /\  /\    /|/|/|  |/
-\___//(_)/(_)    | | |_/|_/
-
-
-Do you have a few lines of CSS to spare?
--> design our site for a day!
-send a PR with your styles at
-https://github.com/bpweb/cssconfbp17
-or tweet us a codepen link at
-@cssconfbudapest !
-
-*/
-
-/**
-* Theme:  KILL BILL
-* Author: https://github.com/sandrina-p @a_sandrina_p
-*/
-
 @import url(https://fonts.googleapis.com/css?family=Anton);/* RESETS */
 
 * {
@@ -260,48 +238,41 @@ section:first-of-type::after {
     text-transform: uppercase;
 }
 
+.page-coc .title, .page-coc .subtitle {
+    font-size: 4rem;
+}
+
 @media (min-width: 80rem) {
     .title,
     .subtitle {
         font-size: 8rem
     }
+
+    .page-coc .title, .page-coc .subtitle {
+        font-size: 7rem;
+    }
 }
 
-.page-coc .title, .page-coc .subtitle {
-    font-size: 4rem;
-}
+/* CSSConf */
 
-.titleConf, .subtitleConf {
+.titleConf {
     display: block;
 }
 
 @media (min-width: 40rem) {
-    .titleConf, .subtitleConf {
+    .titleConf {
         display: inline;
         display: initial
     }
 }
 
-.titleLocation, .subtitleLocation {
+.titleLocation {
     display: block;
     margin-top: 0.5rem;
     color: #fff;
     text-shadow: none;
     margin-left: 0.3rem;
     font-size: 0.3em;
-}
-
-.page-coc .subtitle {
-    color: white;
-    margin-top: 2rem;
-    font-size: 2.1rem;
-    text-shadow: 0.15rem 0.15rem 0 #000;
-}
-
-@media (min-width: 80rem) {
-    .page-coc .subtitle {
-        font-size: 2.66rem
-    }
 }
 
 /* CSS CENTRAL EUROPE */
@@ -351,8 +322,9 @@ section:first-of-type::after {
     margin-top: 2rem;
 }
 
-@media (min-height: 46rem), (min-width: 40rem) and (min-height: 48rem) {
+/* Bottom Align */
 
+@media (min-height: 48rem) {
     .nav {
         position: absolute;
         bottom: 6vw
@@ -465,6 +437,19 @@ a:focus {
 }
 
 /* ONLY ON PAGE-COC */
+
+.page-coc .subtitle {
+    color: white;
+    margin-top: 2rem;
+    font-size: 2.1rem;
+    text-shadow: 0.15rem 0.15rem 0 #000;
+}
+
+@media (min-width: 80rem) {
+    .page-coc .subtitle {
+        font-size: 2.66rem
+    }
+}
 
 .page-coc p,
 .page-coc q,
