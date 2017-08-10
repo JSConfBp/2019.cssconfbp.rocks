@@ -7,51 +7,18 @@
   <title>CSSConf Budapest 2017</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div class="video" id="video"></div>
-
-  <script async src="https://www.youtube.com/iframe_api"></script>
-  <script>
-     function onYouTubeIframeAPIReady() {
-        var player;
-        player = new YT.Player('video', {
-         videoId: 'eniDIEQvKgo', // YouTube Video ID
-         width: 560,               // Player width (in px)
-         height: 316,              // Player height (in px)
-         playerVars: {
-           autoplay: 1,        // Auto-play the video on load
-           controls: 0,        // Show pause/play buttons in player
-           showinfo: 0,        // Hide the video title
-           modestbranding: 0,  // Hide the Youtube Logo
-           loop: 1,            // Run the video in a loop
-           fs: 0,              // Hide the full screen button
-           cc_load_policy: 0, // Hide closed captions
-           iv_load_policy: 3,  // Hide the Video Annotations
-           autohide: 0         // Hide video controls when playing
-         },
-         events: {
-           onReady: function(e) {
-             e.target.mute();
-           }
-         }
-     });
-   }
-
-   // thanks @labnol
-  </script>
+<body class="index-page">
+  <nav>
+    <a href="code-of-conduct.html">Code of Conduct</a>
+    <a href="http://2016.cssconfbp.rocks">2016</a>
+    <a href="https://ti.to/jsconf-bp/cssconf-budapest-2017/">Tickets</a>
+    <a href="/style.css">Design our site for a day</a>
+  </nav>
 
   <div class="overlay">
-
-    <h1>CSSConf Budapest 2017</h1>
+    <h1 class="title">CSSConf Budapest 2017</h1>
     <p>Save the date: on the <strong>25th of October 2017</strong> we're back.</p>
-
-    <nav>
-      <a href="code-of-conduct.html">Code of Conduct</a>
-      <a href="http://2016.cssconfbp.rocks">2016</a>
-      <a href="https://ti.to/jsconf-bp/cssconf-budapest-2017/">tickets</a>
-      <a href="/style.css">design our site for a day</a>
-    </nav>
-
+    <p>We still miss the CSS from Central Europe.<br> We will bring you some.</p>
   </div>
 
 </body>
