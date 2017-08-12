@@ -32,8 +32,8 @@ html {
 body {
   background: #223;
   color: #eef;
-
 }
+
 .index-page {
   padding-right: 3em;
   text-align: right;
@@ -47,6 +47,7 @@ p,a{
 nav a {
   display: block;
   margin-top: .6em;
+  text-align: right;
 }
 
 a {
@@ -73,4 +74,9 @@ strong {
   font-size: 1.5em;
   text-shadow: 0 -1px 1px #112;
 
+}
+
+.overlay, nav {
+  max-width: 36em;
+  margin: 0 auto;
 }
