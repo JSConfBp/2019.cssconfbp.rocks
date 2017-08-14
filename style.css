@@ -14,6 +14,9 @@
   https://goo.gl/forms/8eOK2syojrn0C2eh1
 */
 
+
+/* attention: emoji styling hack, does not work in IE */
+
 html {
   height: 100%;
 }
@@ -23,6 +26,11 @@ body {
   margin: 0;
   padding: 1rem;
   height: 100%;
+  max-width: 100%;
+
+  display: -webkit-flex;
+  -webkit-flex-direction: column; /* fallback ios 8 */
+  -webkit-justify-content: space-between;  /* fallback ios 8 */
 
   display: flex;
   flex-direction: column;
@@ -43,6 +51,7 @@ body:after {
     top: 42%;
     left: 50%;
     z-index: -1;
+  -webkit-transform: translate(-50%,-50%);  /* fallback ios 8 */
   transform: translate(-50%,-50%);
 
   font-family: 'Panton', sans-serif;
@@ -100,10 +109,11 @@ h1::after {
 
 .📌 {
   position: relative;
+  -webkit-transform: rotate(10deg);  /* fallback ios 8 */
   transform: rotate(10deg);
 
   box-sizing: border-box;
-  width: 9.9em;
+  width: 11em;
   margin: .75em 0 1em auto;
   padding: 1em 1.4em;
   border: 2px solid #fff;
@@ -169,7 +179,7 @@ h1::after {
 
 /* we will bring you some */
 .🎉 {
-  margin: 0 0 3rem 0;
+  margin: 0 0 2.5rem 0;
   font-size: 120%;
 }
 
@@ -191,9 +201,13 @@ h1::after {
 
 /* navigation */
 .🗺️ {
+  display: -webkit-flex;  /* fallback ios 8 */
+  -webkit-flex-wrap: wrap;  /* fallback ios 8 */
+  -webkit-align-self: flex-end;  /* fallback ios 8 */
   display: flex;
   flex-wrap: wrap;
   align-self: flex-end;
+
   min-width: 70%;
 
   font-size: 100%;
@@ -225,6 +239,7 @@ h1::after {
   /* emoji style hack */
   background: linear-gradient(to right, #ffaa00 55%, #cc4400 55.1%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
