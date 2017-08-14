@@ -66,6 +66,14 @@ body:after {
     7px 7px 0px #663300;
 }
 
+.code-of-conduct::after {
+  opacity: .4;
+}
+
+.overlay {
+  flex: 1 0 auto;
+}
+
 @media (min-width: 400px) {
   body {
     font-size: 20px;
@@ -79,7 +87,7 @@ body:after {
   }
 }
 
-h1 {
+.ℹ️ {
  position: absolute;
  width: 5em;
  margin: 0;
@@ -91,7 +99,7 @@ h1 {
  font-weight: 400;
 }
 
-h1::after {
+.ℹ️::after {
     content: '';
     position: absolute;
       bottom: -9%;
@@ -212,11 +220,17 @@ h1::after {
 
   font-size: 100%;
 }
+.overlay a {
+  color: #ffaa00;
+}
+.code-of-conduct .🗺️ {
+  flex: 1 0 auto;
+}
 /* link, anker */
 .🔗 {
   flex: 1 0 auto;
   color: #fff;
-  padding: .25em .25em .25em 0;
+  padding: .25em .5em .25em 0;
   text-decoration: none;
 }
 
@@ -243,3 +257,8 @@ h1::after {
   -webkit-text-fill-color: transparent;
 }
 
+q {
+  color: #cc0000;
+  font-style: italic;
+  font-size: 150%;
+}
