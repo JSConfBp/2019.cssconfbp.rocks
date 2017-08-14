@@ -16,11 +16,9 @@
 */
 
 /**
-* Theme: Pink Power 🎀
-* Author: @KrisztaMatyi
+* Theme: css-editor
+* Author: @vijayabharathib
 */
-
-@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:700|Rubik');
 
 /* universal box sizing for the win */
 *, *:before, *:after {
@@ -32,177 +30,53 @@ html {
 }
 
 body {
-  font-family: 'Rubik', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  position: relative;
-  margin: 0;
-  background: hotpink;
+  background: #223;
+  color: #eef;
 }
 
-.overlay {
-  max-width: 960px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 80px 20px;
+.index-page {
+  padding-right: 3em;
+  text-align: right;
 }
 
-.title {
-  font-size: 2.5em;
-  font-family: 'Libre Baskerville', serif;
-  margin-top: 0;
-  background: white;
-  color: black;
-  border: 4px solid black;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 20px 10px;
-  margin-bottom: 0;
-}
-
-.index-page p {
-  font-size: 20px;
-  text-align: center;
-  background: white;
-  color: black;
-  border-color: black;
-  border-style: solid;
-  border-width: 0 4px 4px 4px;
-  padding: 20px 10px;
-  margin: 0;
-}
-
-.subtitle {
-  background: white;
-  padding: 20px;
-  display: inline-block;
-  border: 4px solid black;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
+p,a{
+  font-family: sans-serif;
+  font-size: 1.2em;
 }
 
 nav a {
-  position: absolute;
-  color: black;
-  padding: 4px 8px;
-  border: 2px solid transparent;
+  display: block;
+  margin-top: .6em;
+  text-align: right;
 }
 
-nav a:hover,
-nav a:focus,
-nav a.active {
-  background: white;
-  border-color: black;
+a {
+  color: #fc9;
+}
+a:hover, a:active {
+  color: #cf9;
   text-decoration: none;
 }
 
-nav a:nth-child(1) {
-  top: 22px;
-  left: 20px;
+a:visited {
+  color: #cf9
 }
 
-nav a:nth-child(2) {
-  bottom: 22px;
-  left: 20px;
+h1 {
+  font-family: serif;
+  font-size: 3em;
+  text-shadow: 0 -1px 1px #112,-1px -2px #001;
+  line-height: 1em;
 }
 
-nav a:nth-child(3) {
-  top: 22px;
-  right: 20px;
+strong {
+  font-weight: 600;
+  font-size: 1.5em;
+  text-shadow: 0 -1px 1px #112;
+
 }
 
-nav a:nth-child(4) {
-  bottom: 22px;
-  right: 20px;
-}
-
-nav a:nth-child(5) {
-  top: 22px;
-  left: 50%;
-  margin-left: -30px;
-}
-
-nav a:nth-child(5) span {
-  position: relative;
-  display: block;
-  text-indent: -9999px;
-  width: 40px;
-}
-
-nav a:nth-child(5) span::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 30px;
-  height: 12px;
-  border-radius: 6px;
-  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
-  -ms-transform: translate(-50%, -50%) rotate(-45deg);
-  transform: translate(-50%, -50%) rotate(-45deg);
-  background: black;
-}
-
-@media (min-width: 600px) {
-  .index-page {
-    height: 100%;
-  }
-  .overlay {
-    padding: 100px 20px;
-  }
-  .index-page .overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    display: -webkit-flex;
-  	display: flex;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-  .index-page .overlay::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 450px;
-    height: 180px;
-    border-radius: 90px;
-    -webkit-transform: translate(-50%, -50%) rotate(-45deg);
-    -ms-transform: translate(-50%, -50%) rotate(-45deg);
-    transform: translate(-50%, -50%) rotate(-45deg);
-    background: black;
-    z-index: -1;
-  }
-  .index-page p:first-of-type {
-    -webkit-flex-basis: 40%;
-    flex-basis: 40%;
-    border-width: 0 2px 4px 4px;
-  }
-  .index-page p:last-of-type {
-    display: -webkit-flex;
-  	display: flex;
-    -webkit-flex-basis: 60%;
-    flex-basis: 60%;
-    -webkit-align-items: center;
-    align-items: center;
-    justify-content: center;
-    border-width: 0 4px 4px 2px;
-  }
-  .title {
-    font-size: 3em;
-    -webkit-flex-basis: 100%;
-    flex-basis: 100%;
-  }
+.overlay, nav {
+  max-width: 36em;
+  margin: 0 auto;
 }
