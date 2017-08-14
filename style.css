@@ -1,208 +1,230 @@
 /*
 
-  __
- / ()  ()  ()             _
-|      /\  /\    /|/|/|  |/
- \___//(_)/(_)    | | |_/|_/
+        _ _|_ |)   o        _,    |)    _  ,_   _
+ /|/|  / \_|  |/\  | /|/|  / |    |/\  |/ /  | |/
+  | |_/\_/ |_/|  |/|/ | |_/\/|/   |  |/|_/   |/|_/
+                            (|
 
-
- Do you have a few lines of CSS to spare?
- -> design our site for a day!
- send a PR with your styles at
- https://github.com/bpweb/cssconfbp17
- or tweet us a codepen link at
- @cssconfbudapest !
-
+  Do you also miss the CSS?
+  -> design our site for a day!
+  send a PR with your styles at
+  https://github.com/bpweb/cssconfbp17
+  -> submit a talk proposal!
+  our CFP is open at
+  https://goo.gl/forms/8eOK2syojrn0C2eh1
 */
-
-/**
-* Theme: Pink Power 🎀
-* Author: @KrisztaMatyi
-*/
-
-@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:700|Rubik');
-
-/* universal box sizing for the win */
-*, *:before, *:after {
-  box-sizing: border-box;
-}
 
 html {
   height: 100%;
 }
 
 body {
-  font-family: 'Rubik', sans-serif;
+  position: relative;
+  margin: 0;
+  padding: 1rem;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+  background: #001133;
+  color: #f5f5f5;
+  font-family: "Foundry Gridnik", sans-serif;
+  text-rendering: optimizeLegibility;
   font-size: 16px;
   line-height: 1.5;
-  position: relative;
-  margin: 0;
-  background: hotpink;
 }
 
-.overlay {
-  max-width: 960px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 80px 20px;
-}
-
-.title {
-  font-size: 2.5em;
-  font-family: 'Libre Baskerville', serif;
-  margin-top: 0;
-  background: white;
-  color: black;
-  border: 4px solid black;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 20px 10px;
-  margin-bottom: 0;
-}
-
-.index-page p {
-  font-size: 20px;
-  text-align: center;
-  background: white;
-  color: black;
-  border-color: black;
-  border-style: solid;
-  border-width: 0 4px 4px 4px;
-  padding: 20px 10px;
-  margin: 0;
-}
-
-.subtitle {
-  background: white;
-  padding: 20px;
-  display: inline-block;
-  border: 4px solid black;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-nav a {
+body:after {
+  content: 'CSS Conf Budapest';
   position: absolute;
-  color: black;
-  padding: 4px 8px;
-  border: 2px solid transparent;
-}
-
-nav a:hover,
-nav a:focus,
-nav a.active {
-  background: white;
-  border-color: black;
-  text-decoration: none;
-}
-
-nav a:nth-child(1) {
-  top: 22px;
-  left: 20px;
-}
-
-nav a:nth-child(2) {
-  bottom: 22px;
-  left: 20px;
-}
-
-nav a:nth-child(3) {
-  top: 22px;
-  right: 20px;
-}
-
-nav a:nth-child(4) {
-  bottom: 22px;
-  right: 20px;
-}
-
-nav a:nth-child(5) {
-  top: 22px;
-  left: 50%;
-  margin-left: -30px;
-}
-
-nav a:nth-child(5) span {
-  position: relative;
-  display: block;
-  text-indent: -9999px;
-  width: 40px;
-}
-
-nav a:nth-child(5) span::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 30px;
-  height: 12px;
-  border-radius: 6px;
-  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
-  -ms-transform: translate(-50%, -50%) rotate(-45deg);
-  transform: translate(-50%, -50%) rotate(-45deg);
-  background: black;
-}
-
-@media (min-width: 600px) {
-  .index-page {
-    height: 100%;
-  }
-  .overlay {
-    padding: 100px 20px;
-  }
-  .index-page .overlay {
-    position: absolute;
-    top: 50%;
+    top: 42%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    display: -webkit-flex;
-  	display: flex;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-  .index-page .overlay::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 450px;
-    height: 180px;
-    border-radius: 90px;
-    -webkit-transform: translate(-50%, -50%) rotate(-45deg);
-    -ms-transform: translate(-50%, -50%) rotate(-45deg);
-    transform: translate(-50%, -50%) rotate(-45deg);
-    background: black;
     z-index: -1;
-  }
-  .index-page p:first-of-type {
-    -webkit-flex-basis: 40%;
-    flex-basis: 40%;
-    border-width: 0 2px 4px 4px;
-  }
-  .index-page p:last-of-type {
-    display: -webkit-flex;
-  	display: flex;
-    -webkit-flex-basis: 60%;
-    flex-basis: 60%;
-    -webkit-align-items: center;
-    align-items: center;
-    justify-content: center;
-    border-width: 0 4px 4px 2px;
-  }
-  .title {
-    font-size: 3em;
-    -webkit-flex-basis: 100%;
-    flex-basis: 100%;
+  transform: translate(-50%,-50%);
+
+  font-family: 'Panton', sans-serif;
+  font-size: 400%;
+  line-height: 1;
+  text-align: center;
+
+  color: #ffaa00;
+  text-shadow: 
+    3px 3px 0px #cc4400, 
+    5px 5px 0px #cc0000, 
+    7px 7px 0px #663300;
+}
+
+@media (min-width: 400px) {
+  body {
+    font-size: 20px;
   }
 }
+
+@media (min-width: 768px) {
+  body {
+    font-size: 26px;
+    padding: 1.5em;
+  }
+}
+
+h1 {
+ position: absolute;
+ width: 5em;
+ margin: 0;
+
+ color: #fff;
+ font-size: 100%;
+ line-height: 1.33;
+ font-family: "Panton", sans-serif;
+ font-weight: 400;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+      bottom: -9%;
+      right: 15%;
+
+    width: 40%;
+    padding: 20% 0;
+    border-radius: 50%;
+    box-shadow: 
+      inset -4px -4px 0 4px #ffaa00, 
+      inset -7px -7px 0 9px #cc4400, 
+      inset -10px -10px 0 14px #cc0000, 
+      inset 0 0 0 150px #663300;
+}
+
+.📌 {
+  position: relative;
+  transform: rotate(10deg);
+
+  box-sizing: border-box;
+  width: 9.9em;
+  margin: .75em 0 1em auto;
+  padding: 1em 1.4em;
+  border: 2px solid #fff;
+  border-radius: 15%;
+  background: inherit;
+  box-shadow: 
+    inset 0 0 0 2px #ffaa00,
+    inset 0 0 0 3px #fff,
+    inset 0 0 0 5px #cc4400, 
+    inset 0 0 0 6px #fff, 
+    inset 0 0 0 8px #cc0000, 
+    inset 0 0 0 9px #fff,
+    inset 0 0 0 11px #663300;
+
+  color: #fff;
+  font-size: 110%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.📌:before {
+  content: '📌';
+
+  position: absolute;
+    top: -20%;
+    left: 50%;
+
+  font-size: 150%;
+
+  /* emoji style hack */
+  background: linear-gradient(45deg, #fff 41%, 
+    #996600 41.1%, 
+    #996600 42%, 
+    #ffaa00 42.1%, 
+    #ffaa00 53%, 
+    #ffcc66 53%, 
+    #ffcc66 54%, 
+    #ffaa00 54.1%, 
+    #FFAA00 73%, 
+    #996600 75%, 
+    #996600 76%, 
+    #ffaa00 78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* we missed it */
+.💔 {
+  margin: auto 0 0 0;
+  font-size: 120%;
+}
+
+.💔:before {
+  content: '💔';
+  margin: 0 .25em 0 0;
+
+  /* emoji style hack */
+  background: linear-gradient(90deg, #ffaa00 47%, #cc0000 47.1%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* we will bring you some */
+.🎉 {
+  margin: 0 0 2rem 0;
+  font-size: 120%;
+}
+
+.🎉:after{
+  content: '🎉';
+
+  padding: 0 0 0 0.5em;
+  font-size: 150%;
+
+  /* emoji style hack */
+  background: linear-gradient(44deg, 
+    #cc0000 30%, 
+    #cc0000 50%, 
+    #cc4400 50.1%, 
+    #ffaa00 75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* navigation */
+.🗺️ {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-end;
+  min-width: 70%;
+
+  font-size: 100%;
+}
+/* link, anker */
+.🔗 {
+  flex: 1 0 auto;
+  color: #fff;
+  padding: .25em .25em .25em 0;
+  text-decoration: none;
+}
+
+.🔗:before {
+  content: attr(data-emoji);
+  padding-right: 8px;
+  font-size: 120%;
+}
+
+.❤️:before {
+  content: '❤️';
+  
+  /* emoji style hack */
+  background: #cc0000;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.🗣️:before {
+  /* emoji style hack */
+  background: linear-gradient(to right, #ffaa00 55%, #cc4400 55.1%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
