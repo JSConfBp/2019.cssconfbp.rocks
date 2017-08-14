@@ -169,7 +169,7 @@ h1::after {
 
 /* we will bring you some */
 .🎉 {
-  margin: 0 0 2rem 0;
+  margin: 0 0 3rem 0;
   font-size: 120%;
 }
 
@@ -177,7 +177,7 @@ h1::after {
   content: '🎉';
 
   padding: 0 0 0 0.5em;
-  font-size: 150%;
+  font-size: 120%;
 
   /* emoji style hack */
   background: linear-gradient(44deg, 
