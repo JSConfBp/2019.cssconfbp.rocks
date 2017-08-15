@@ -16,67 +16,254 @@
 */
 
 /**
-* Theme: css-editor
-* Author: @vijayabharathib
+* Theme: retro <3 emoji
+* Author: @kotzendekrabbe
 */
 
-/* universal box sizing for the win */
-*, *:before, *:after {
-  box-sizing: border-box;
-}
+/* attention: emoji styling hack, does not work in IE */
 
 html {
   height: 100%;
 }
 
 body {
-  background: #223;
-  color: #eef;
+  position: relative;
+  margin: 0;
+  padding: 1rem;
+  height: 100%;
+  max-width: 100%;
+
+  display: -webkit-flex;
+  -webkit-flex-direction: column; /* fallback ios 8 */
+  -webkit-justify-content: space-between;  /* fallback ios 8 */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+  background: #001133;
+  color: #f5f5f5;
+  font-family: "Foundry Gridnik", sans-serif;
+  text-rendering: optimizeLegibility;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-.index-page {
-  padding-right: 3em;
-  text-align: right;
+body:after {
+  content: 'CSS Conf Budapest';
+  position: absolute;
+    top: 42%;
+    left: 50%;
+    z-index: -1;
+  -webkit-transform: translate(-50%,-50%);  /* fallback ios 8 */
+  transform: translate(-50%,-50%);
+
+  font-family: 'Panton', sans-serif;
+  font-size: 400%;
+  line-height: 1;
+  text-align: center;
+
+  color: #ffaa00;
+  text-shadow:
+    3px 3px 0px #cc4400,
+    5px 5px 0px #cc0000,
+    7px 7px 0px #663300;
 }
 
-p,a{
-  font-family: sans-serif;
-  font-size: 1.2em;
+.code-of-conduct::after {
+  opacity: .4;
 }
 
-nav a {
-  display: block;
-  margin-top: .6em;
-  text-align: right;
+.overlay {
+  flex: 1 0 auto;
 }
 
-a {
-  color: #fc9;
+@media (min-width: 400px) {
+  body {
+    font-size: 20px;
+  }
 }
-a:hover, a:active {
-  color: #cf9;
+
+@media (min-width: 768px) {
+  body {
+    font-size: 26px;
+    padding: 1.5em;
+  }
+}
+
+.ℹ️ {
+ position: absolute;
+ width: 5em;
+ margin: 0;
+
+ color: #fff;
+ font-size: 100%;
+ line-height: 1.33;
+ font-family: "Panton", sans-serif;
+ font-weight: 400;
+}
+
+.ℹ️::after {
+    content: '';
+    position: absolute;
+      bottom: -9%;
+      right: 15%;
+
+    width: 40%;
+    padding: 20% 0;
+    border-radius: 50%;
+    box-shadow:
+      inset -4px -4px 0 4px #ffaa00,
+      inset -7px -7px 0 9px #cc4400,
+      inset -10px -10px 0 14px #cc0000,
+      inset 0 0 0 150px #663300;
+}
+
+.📌 {
+  position: relative;
+  -webkit-transform: rotate(10deg);  /* fallback ios 8 */
+  transform: rotate(10deg);
+
+  box-sizing: border-box;
+  width: 11em;
+  margin: .75em 0 1em auto;
+  padding: 1em 1.4em;
+  border: 2px solid #fff;
+  border-radius: 15%;
+  background: inherit;
+  box-shadow:
+    inset 0 0 0 2px #ffaa00,
+    inset 0 0 0 3px #fff,
+    inset 0 0 0 5px #cc4400,
+    inset 0 0 0 6px #fff,
+    inset 0 0 0 8px #cc0000,
+    inset 0 0 0 9px #fff,
+    inset 0 0 0 11px #663300;
+
+  color: #fff;
+  font-size: 110%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.📌:before {
+  content: '📌';
+
+  position: absolute;
+    top: -20%;
+    left: 50%;
+
+  font-size: 150%;
+
+  /* emoji style hack */
+  background: linear-gradient(45deg, #fff 41%,
+    #996600 41.1%,
+    #996600 42%,
+    #ffaa00 42.1%,
+    #ffaa00 53%,
+    #ffcc66 53%,
+    #ffcc66 54%,
+    #ffaa00 54.1%,
+    #FFAA00 73%,
+    #996600 75%,
+    #996600 76%,
+    #ffaa00 78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* we missed it */
+.💔 {
+  margin: auto 0 0 0;
+  font-size: 120%;
+}
+
+.💔:before {
+  content: '💔';
+  margin: 0 .25em 0 0;
+
+  /* emoji style hack */
+  background: linear-gradient(90deg, #ffaa00 47%, #cc0000 47.1%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* we will bring you some */
+.🎉 {
+  margin: 0 0 2.5rem 0;
+  font-size: 120%;
+}
+
+.🎉:after{
+  content: '🎉';
+
+  padding: 0 0 0 0.5em;
+  font-size: 120%;
+
+  /* emoji style hack */
+  background: linear-gradient(44deg,
+    #cc0000 30%,
+    #cc0000 50%,
+    #cc4400 50.1%,
+    #ffaa00 75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* navigation */
+.🗺️ {
+  display: -webkit-flex;  /* fallback ios 8 */
+  -webkit-flex-wrap: wrap;  /* fallback ios 8 */
+  -webkit-align-self: flex-end;  /* fallback ios 8 */
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-end;
+
+  min-width: 70%;
+
+  font-size: 100%;
+}
+.overlay a {
+  color: #ffaa00;
+}
+.code-of-conduct .🗺️ {
+  flex: 1 0 auto;
+}
+/* link, anker */
+.🔗 {
+  flex: 1 0 auto;
+  color: #fff;
+  padding: .25em .5em .25em 0;
   text-decoration: none;
 }
 
-a:visited {
-  color: #cf9
+.🔗:before {
+  content: attr(data-emoji);
+  padding-right: 8px;
+  font-size: 120%;
 }
 
-h1 {
-  font-family: serif;
-  font-size: 3em;
-  text-shadow: 0 -1px 1px #112,-1px -2px #001;
-  line-height: 1em;
+.❤️:before {
+  content: '❤️';
+
+  /* emoji style hack */
+  background: #cc0000;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-strong {
-  font-weight: 600;
-  font-size: 1.5em;
-  text-shadow: 0 -1px 1px #112;
-
+.🗣️:before {
+  /* emoji style hack */
+  background: linear-gradient(to right, #ffaa00 55%, #cc4400 55.1%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.overlay, nav {
-  max-width: 36em;
-  margin: 0 auto;
+q {
+  color: #cc0000;
+  font-style: italic;
+  font-size: 150%;
 }
