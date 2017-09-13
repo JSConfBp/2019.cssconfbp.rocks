@@ -341,3 +341,21 @@ footer p {
   opacity: 0.3;
   max-width: unset;
 }
+
+tito-widget {
+  width: 100%;
+}
+
+.tito-wrapper {
+  font-size: 12px;
+  text-align: left;
+  background: #eee;
+}
+
+.tito-wrapper a {
+  color: black;
+}
+
+.tito-discount-code {
+  margin: 0 15px;
+}
