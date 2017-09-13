@@ -23,8 +23,14 @@ body {
    line-height: 1;
    text-transform: none;
    font-size: 2.6em;
-   position: fixed;
-   top: 180px;
+   position: relative;
+}
+
+@media (min-width: 600px) {
+  .logo {
+    position: fixed;
+    top: 180px;
+  }
 }
 
 .logo::before {
@@ -142,9 +148,17 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 100px;
   position: relative;
   background: rgba(17,17,17,.95);
+  padding: 1em .5em;
+  overflow: hidden;
+}
+
+
+@media (min-width: 600px) {
+  section {
+    padding: 100px;
+  }
 }
 
 section.hero {
@@ -229,8 +243,14 @@ q {
 }
 
 h1 {
-  font-size: 5em;
+  font-size: 3em;
   text-transform: uppercase;
+}
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 5em;
+  }
 }
 
 h2 {
@@ -305,8 +325,14 @@ p {
 
 footer {
   background: rgba(0,0,0,.95);
-  padding: 100px;
+  padding: 1em;
   position: relative;
+}
+
+@media (min-width: 600px) {
+  footer {
+    padding: 100px;
+  }
 }
 
 footer p {
