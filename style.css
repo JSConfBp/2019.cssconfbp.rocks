@@ -26,6 +26,10 @@ body {
    position: relative;
 }
 
+.coc .logo {
+  opacity: .2;
+}
+
 @media (min-width: 600px) {
   .logo {
     position: fixed;
@@ -242,6 +246,10 @@ q {
   font-size: 150%;
 }
 
+.logo a::before {
+  display: none;
+}
+
 h1 {
   font-size: 3em;
   text-transform: uppercase;
@@ -262,6 +270,14 @@ p {
   max-width: 30em;
 }
 
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
 .speakers {
   display: flex;
   flex-direction: row;
@@ -271,7 +287,6 @@ p {
 }
 
 .speakers li {
-  list-style: none;
   flex-basis: 100%;
   box-sizing: border-box;
   margin-bottom: 30px;
@@ -361,4 +376,13 @@ tito-widget {
 
 .tito-discount-code {
   margin: 0 15px;
+}
+
+.coc {
+  text-align: center;
+  padding: 1em 1em 3em;
+}
+
+.coc h2 {
+  margin-top: 3em;
 }
