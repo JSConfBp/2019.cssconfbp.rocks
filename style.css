@@ -6,11 +6,9 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500&subset=latin-ext');
 
 body {
-   font: 20px/1.3 Rubik, sans-serif;
+   font: 20px/1.5 Rubik, sans-serif;
    font-weight: 300;
-   background: #222 radial-gradient(circle at center, black 0, transparent 1.4px);
    background: #111;
-   background-size: 9px 9px;
    color: #fefefe;
    margin: 0;
 }
@@ -25,7 +23,8 @@ body {
    line-height: 1;
    text-transform: none;
    font-size: 2.6em;
-   position: relative;
+   position: fixed;
+   top: 180px;
 }
 
 .logo::before {
@@ -119,11 +118,11 @@ i {
   right: -46px;
   top: -50%;
   border: 4px solid white;
-  background: linear-gradient(to right, papayawhip, tomato);
+  background: linear-gradient(to bottom, #f35c1d, #ac2a4b);
   border-radius: 40px;
   width: 40px;
   height: 40px;
-  animation: fall 50s infinite;
+  animation: fall 80s infinite;
   box-shadow: inset 0 0 0 6px #111;
 }
 
@@ -132,34 +131,39 @@ i {
     transform: translateY(0vh);
   }
   100% {
-    transform: translateY(150vh);
+    transform: translateY(300vw);
   }
 }
 
 section {
   min-height: 80vh;
-  max-width: 1000px;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 20px;
-  margin: 0 auto;
+  padding: 100px;
+  position: relative;
+  background: rgba(17,17,17,.95);
 }
 
 section.hero {
   text-align: left;
-  min-height: calc(100vh - 300px);
   align-items: flex-start;
   justify-content: flex-start;
   border-bottom: 80px solid white;
   max-width: unset;
+  background: none;
+}
+
+.hero p {
+  margin: 0;
 }
 
 @media (min-width: 600px) {
    section.hero {
-      padding: 200px 60px 20px;
+      padding: 430px 60px 20px;
+      min-height: calc(100vh - 520px);
    }
 }
 
@@ -178,30 +182,32 @@ nav {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding: 15px;
-  min-height: 20px;
+  padding: 5px 15px;
+  line-height: 40px;
   align-items: center;
   background: white;
   color: #111;
   font-weight: 400;
   position: relative;
-  position: sticky;
-  position: -webkit-sticky;
-  position: -moz-sticky;
-  position: -ms-sticky;
-  position: -o-sticky;
   top: 0px;
-  margin-top: -70px;
+  margin: -65px 0 10px;
+  z-index: 2;
 }
 
 @media (min-width: 550px) {
   nav {
     flex-direction: row;
+    position: sticky;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
   }
 }
 
 nav a {
   color: #111;
+  line-height: 2;
 }
 
 a::before {
@@ -231,7 +237,12 @@ h2 {
   font-size: 1.2em;
 }
 
-.speakers ul {
+p {
+  margin: 0 auto 20px;
+  max-width: 30em;
+}
+
+.speakers {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -241,12 +252,66 @@ h2 {
 
 .speakers li {
   list-style: none;
-  flex-basis: 33%;
+  flex-basis: 100%;
   box-sizing: border-box;
-  padding: 20px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 750px) {
+  .speakers li {
+    flex-basis: 33%;
+  }
 }
 
 .speakers img {
-  width: 100%;
+  width: 80%;
   border-radius: 100%;
+}
+
+.map {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.venue {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 3em;
+}
+
+.venue h2 {
+  padding: 100px 20px;
+  border-radius: 100px;
+  background: slategray;
+}
+
+.venue img {
+  margin: 0 0 -30px;
+  border-radius: 500px;
+}
+
+@media (min-width: 600px) {
+  .venue {
+    flex-direction: row;
+  }
+  .venue img {
+    margin: 0 -20px 0 0;
+  }
+}
+
+
+footer {
+  background: rgba(0,0,0,.95);
+  padding: 100px;
+  position: relative;
+}
+
+footer p {
+  font-size: 0.6em;
+  line-height: 1.8;
+  opacity: 0.3;
+  max-width: unset;
 }
