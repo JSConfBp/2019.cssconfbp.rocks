@@ -247,12 +247,6 @@ a::before {
    transition: transform .2s;
 }
 
-q {
-  color: #cc0000;
-  font-style: italic;
-  font-size: 150%;
-}
-
 .logo a::before {
   display: none;
 }
