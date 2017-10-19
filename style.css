@@ -26,14 +26,13 @@ body {
    position: relative;
 }
 
-.sub .logo {
-  opacity: .2;
-}
-
 @media (min-width: 600px) {
   .logo {
     position: fixed;
     top: 180px;
+  }
+  .sub .logo {
+    opacity: .2;
   }
 }
 
@@ -253,6 +252,7 @@ a::before {
 
 h1 {
   font-size: 3em;
+  line-height: 1;
   text-transform: uppercase;
 }
 
@@ -428,7 +428,7 @@ dd {
   margin: 0;
 }
 
-.talk .speaker {
+.speaker {
   text-transform: uppercase;
 }
 
@@ -436,4 +436,31 @@ small {
   font-size: 0.65em;
   color: lightpink;
   display: block;
+}
+
+.talkpage h1 {
+  text-transform: none;
+}
+
+@media (min-width: 600px) {
+  .talkpage h1 {
+    margin-top: 100px;
+  }
+}
+
+.talkpage .speaker {
+  font-size: 2.2em;
+  color: lightpink;
+}
+
+.talkpage .avatar {
+  border-radius: 100%;
+  width: 3em;
+  vertical-align: middle;
+  display: block;
+  margin: 0 auto 1em;
+}
+
+code {
+  white-space: nowrap;
 }
