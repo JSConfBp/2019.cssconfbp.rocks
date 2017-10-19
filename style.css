@@ -26,7 +26,7 @@ body {
    position: relative;
 }
 
-.coc .logo {
+.sub .logo {
   opacity: .2;
 }
 
@@ -199,7 +199,7 @@ a {
 }
 
 a.long,
-.coc a {
+.sub a {
   color: lightpink;
 }
 
@@ -219,7 +219,7 @@ nav {
   z-index: 2;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 650px) {
   nav {
     flex-direction: row;
     position: sticky;
@@ -266,7 +266,7 @@ h2 {
   font-size: 1.2em;
 }
 
-p {
+p, dl {
   margin: 0 auto 20px;
   max-width: 30em;
 }
@@ -379,11 +379,61 @@ tito-widget {
   margin: 0 15px;
 }
 
-.coc {
+.sub {
   text-align: center;
   padding: 1em 1em 3em;
 }
 
-.coc h2 {
+.sub h2 {
   margin-top: 3em;
+}
+
+.sub nav {
+  margin-left: -1em;
+  margin-right: -1em;
+}
+
+dl {
+  text-align: left;
+  max-width: 35em;
+}
+
+dd {
+  margin-bottom: 2em;
+}
+
+@media (min-width: 600px) {
+  dl {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 170px auto;
+  }
+  dt {
+    text-align: right;
+  }
+  dd {
+    margin: 0;
+  }
+}
+
+dt {
+  font-family: 'PT Mono', monospace;
+}
+
+dd {
+  text-align: left;
+}
+
+.schedule dd h2 {
+  margin: 0;
+}
+
+.talk .speaker {
+  text-transform: uppercase;
+}
+
+small {
+  font-size: 0.65em;
+  color: lightpink;
+  display: block;
 }
