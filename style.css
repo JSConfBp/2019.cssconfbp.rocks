@@ -468,3 +468,21 @@ small {
 code {
   white-space: nowrap;
 }
+
+.sponsors img {
+  display: block;
+  max-width: 20em;
+  margin: 1em auto;
+}
+
+.sponsors .sponsor-small {
+  width: 16em;
+}
+
+.sponsors .mozilla {
+  margin: 3em auto;
+}
+
+.sponsors .springer {
+  width: 13em;
+}
