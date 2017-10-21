@@ -453,12 +453,16 @@ small {
   color: lightpink;
 }
 
-.talkpage .avatar {
+.avatar {
   border-radius: 100%;
   width: 3em;
-  vertical-align: middle;
   display: block;
   margin: 0 auto 1em;
+}
+
+.mc .avatar {
+  width: 100%;
+  max-width: 15em;
 }
 
 code {
