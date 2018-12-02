@@ -32,23 +32,28 @@ body::before {
 
 /* LAYOUT */
 
+@media (min-width: 970px) {
+  main {
+    display: grid;
+    grid-template-columns: 38% 62%;
+    grid-column-gap: 0;
+    grid-row-gap: 50px;
+    padding: 0 50px 50px;
+  }
+  .logo-place {
+    height: 2em;
+    font-size: 150px;
+  }
+}
+
 main {
-  display: grid;
-  grid-template-columns: 38% 62%;
   overflow: hidden;
-  grid-column-gap: 0;
-  grid-row-gap: 50px;
-  padding: 0 50px 50px;
+  padding: 0 50px 30px;
 }
 
 header {
   grid-column: 2;
   grid-row: 1 / span 2;
-}
-
-.logo-place {
-  height: 2em;
-  font-size: 150px;
 }
 
 .series {
@@ -57,11 +62,33 @@ header {
   margin-bottom: 1em;
 }
 
+header, aside {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+@media (min-width: 970px) {
+  header, aside {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
 /* DETAILS */
+
 
 body {
   min-height: 100vh;
-  font: 30px/1.7 Rubik, sans-serif;
+  font: 18px/1.7 Rubik, sans-serif;
+}
+@media (min-width: 650px) {
+  body {
+    font-size: 22px;
+  }
+}
+@media (min-width: 970px) {
+  body {
+    font-size: 30px;
+  }
 }
 
 a {
@@ -75,9 +102,14 @@ p {
 
 header {
   padding-top: 100px;
-  font-size: 70px;
+  font-size: 30px;
   font-family: 'Rubik Mono One', Rubik, sans-serif;
   line-height: 1;
+}
+@media (min-width: 650px) {
+  header {
+    font-size: 70px;
+  }
 }
 
 .logo {
@@ -85,7 +117,12 @@ header {
   font-size: inherit;
   margin: 0;
   font-weight: normal;
-  white-space: pre-line;
+}
+
+@media (min-width: 400px) {
+  .logo, .menu {
+    white-space: pre-line;
+  }
 }
 
 .logo::before {
@@ -102,7 +139,6 @@ header {
 }
 
 .menu {
-  white-space: pre-line;
   position: relative;
 }
 
@@ -110,7 +146,6 @@ header {
   background: papayawhip;
   padding: 30px;
   font-family: Lora, serif;
-  font-size: 22px;
   align-self: start;
 }
 
@@ -119,28 +154,37 @@ header {
   font-family: 'Rubik Mono One', Rubik, sans-serif;
 }
 
-.about {
-  font-size: 30px;
-}
-
 aside {
   background: ghostwhite;
-  position: relative;
-  left: -50px;
   padding: 30px;
-  font-size: 22px;
+}
 
+@media (min-width: 970px) {
+  aside {
+    position: relative;
+    left: -50px;
+  }
 }
 
 footer {
   background: black;
   color: white;
   padding: 60px;
-  font-size: 22px;
   font-family: Lora, serif;
 }
 
 footer p {
   max-width: 600px;
   margin: 0 auto 1em;
+}
+
+@media (min-width: 650px) {
+  .series, aside, footer {
+    font-size: 22px;
+  }
+}
+@media (min-width: 970px) {
+  .series, aside, footer {
+    font-size: 22px;
+  }
 }
