@@ -97,7 +97,7 @@ body {
   }
 }
 
-a {
+a, .link {
   color: tomato;
   text-decoration: none;
 }
