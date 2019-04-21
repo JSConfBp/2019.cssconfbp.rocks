@@ -125,7 +125,9 @@ body {
 }
 
 a, .link {
-  color: tomato;
+  /* color: tomato; */
+  /* color: salmon; */
+  color: #F05D5E;
   text-decoration: none;
 }
 
@@ -194,6 +196,9 @@ header {
   .about, .series, aside {
     background: white;
   }
+  aside {
+    text-align: right;
+  }
 }
 
 /* .series::after, aside::after {
@@ -208,6 +213,14 @@ header {
 .series::before {
   content: '❝';
   font-family: 'Rubik Mono One', Rubik, sans-serif;
+  text-indent: -0.7em;
+  display: inline-block;
+}
+
+aside h1 {
+  font-family: 'Rubik Mono One', Rubik, sans-serif;
+  margin-bottom: 1em;
+  font-size: 1.4em;
 }
 
 .single {
