@@ -1,5 +1,4 @@
 node_modules
-assets
 npm-debug.log
 gulpfile.js
 package.json
@@ -20,3 +19,8 @@ package-lock.json
 .Spotlight-V100
 .Trashes
 Icon
+
+# for jekyll generated stuff
+_site
+.sass-cache
+.jekyll-metadata

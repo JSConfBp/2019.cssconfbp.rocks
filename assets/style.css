@@ -1,5 +1,5 @@
 /**
-* Theme: 19v2
+* Theme: 19v3
 * Author: @hubudibu
 */
 
@@ -38,12 +38,6 @@ main {
   padding: 0 40px 40px;
 }
 
-.single {
-  padding: 0 40px 40px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
 header, aside {
   margin-top: 1em;
   margin-bottom: 1em;
@@ -67,19 +61,23 @@ header, aside {
     grid-row-gap: 20px;
     padding: 0 20px;
   }
-  main::before,
   main::after {
     content: '';
     z-index: -1;
     position: relative;
     background: linear-gradient(lavender,azure);
     background-attachment: fixed;
-    grid-column: 2 / -1;
-    grid-row: 3 / span 4;
-  }
-  main::after {
     grid-column: 4 / -1;
     grid-row: 1 / span 5;
+  }
+  .bg {
+    z-index: -1;
+    position: relative;
+    background: linear-gradient(lavender,azure);
+    background-attachment: fixed;
+    grid-column: 2 / -1;
+    grid-row: 2 / span 7;
+    /* 5 */
   }
 }
 
@@ -104,23 +102,23 @@ aside {
   grid-row: 4;
 }
 
+.single {
+  grid-column: 3 / 10;
+  grid-row: 4;
+}
+
 
 /* DETAILS */
 
 
 body {
   min-height: 100vh;
-  font: 18px/1.7 Rubik, sans-serif;
+  font: 18px/1.5 Rubik, sans-serif;
   color: black;
 }
 @media (min-width: 650px) {
   body {
     font-size: 22px;
-  }
-}
-@media (min-width: 970px) {
-  body {
-    font-size: 30px;
   }
 }
 
@@ -134,6 +132,10 @@ a, .link {
 p, q, ul, ol {
   display: block;
   margin-bottom: 1em;
+}
+
+ul, ol {
+  margin-left: 1em;
 }
 
 header {
@@ -182,6 +184,11 @@ header {
   padding: 20px;
 }
 
+.single {
+  padding: 20px;
+  background: white;
+}
+
 .series, aside {
   font-family: Lora, serif;
   align-self: start;
@@ -191,24 +198,19 @@ header {
   background-attachment: fixed;
 }
 
+.series {
+  line-height: 1.7;
+}
 
 @media (min-width: 970px) {
   .about, .series, aside {
     background: white;
+    font-size: 30px;
   }
   aside {
     text-align: right;
   }
 }
-
-/* .series::after, aside::after {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  top: 0; bottom: 0;
-  left: 0; right: 0;
-  background: ghostwhite;
-} */
 
 .series::before {
   content: '❝';
@@ -234,9 +236,17 @@ aside h1 {
 .single h5 {
   font-family: Rubik, sans-serif;
   font-weight: 700;
-  font-size: 1.2em;
+  font-size: 1.5em;
   line-height: 1.3;
-  margin-bottom: 0.5em;
+  margin: 1em 0 0.5em;
+}
+
+.single h1:first-child {
+  margin-top: 0;
+}
+
+.single strong {
+  font-weight: bold;
 }
 
 footer {
@@ -260,4 +270,165 @@ footer p {
   .series, aside, footer {
     font-size: 22px;
   }
+}
+
+/* SPEAKERS */
+
+
+.speaker-pic {
+  border: 20px solid white;
+  max-width: 50%;
+}
+
+@media (min-width: 970px) {
+  .speaker-card {
+    grid-column-end: span 5;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-areas:
+      "pic pic . . ."
+      "pic pic desc desc desc"
+      ". . desc desc desc";
+    align-items: start;
+  }
+
+  .speaker-card::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -20px;
+    right: -20px;
+    bottom: -20px;
+    left: -20px;
+    background: linear-gradient(lavender,azure);
+    background-attachment: fixed;
+  }
+
+  .speaker-pic {
+    max-width: 100%;
+  }
+}
+
+.speaker-card:nth-of-type(2n+1) {
+  grid-column-start: 2;
+}
+
+.speaker-card:nth-of-type(1),
+.speaker-card:nth-of-type(9) { grid-column-start: 1; }
+.speaker-card:nth-of-type(5) { grid-column-start: 3; }
+
+.speaker-pic { grid-area: pic; }
+.speaker-desc { grid-area: desc; }
+
+.speaker-pic img {
+  max-width: 100%;
+  display: block;
+}
+
+.speaker-desc {
+  background: linear-gradient(lavender,azure);
+  background-attachment: fixed;
+  padding: 20px 20px 5px;
+}
+
+.speaker-link {
+  color: black;
+  transition: color .2s;
+}
+
+.speaker-link:hover,
+.speaker-link:focus {
+  color: #F05D5E;
+}
+
+.speaker-title {
+  font-family: Lora, serif;
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+@media (min-width: 970px) {
+  .speaker-desc {
+    background: white;
+  }
+}
+
+.speaker-name,
+.page-title {
+  font-family: 'Rubik Mono One', Rubik, sans-serif;
+  line-height: 1.3;
+}
+
+.page-title {
+  grid-row: 3 / span 2;
+  font-size: 70px;
+  grid-column: 1 / span 5;
+  background: white;
+}
+
+.placeholder-pic {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  width: 100%;
+}
+
+@media (min-width: 970px) {
+  .speaker-page {
+    grid-column: 1 / span 9;
+    grid-row: 3;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-areas: "pic pic pic pic  . . . . ." "pic pic pic pic desc desc desc desc desc";
+    align-items: start;
+  }
+  .speaker-page .speaker-desc {
+    font-size: 2em;
+  }
+}
+
+
+
+.abstract {
+  grid-row-start: 4;
+}
+
+.bio {
+  grid-row: 7 / span 1;
+  grid-column: 3 / -3;
+}
+
+.bio h1 {
+  font-family: 'Rubik Mono One', Rubik, sans-serif;
+  margin-bottom: 20px;
+}
+
+.stats {
+  grid-row-start: 5;
+  text-align: left;
+  font-family: inherit;
+  padding-bottom: 5px;
+}
+
+.stats li {
+  position: relative;
+  list-style: none;
+}
+
+.stats li::before {
+  content: '';
+  position: absolute;
+  width: 13px;
+  left: -1.1em;
+  top: 0.6em;
+  height: 5px;
+  border-radius: 13px;
+  transform: rotate(-45deg);
+  border: 2px solid;
 }

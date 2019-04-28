@@ -1,0 +1,29 @@
+---
+layout: plain
+---
+
+<main>
+  <header>
+    <h1 class="logo">CSSConf
+      Budapest
+      2019
+      September
+      25
+    </h1>
+    <nav class="menu"><a href="https://ti.to/jsconf-bp/cssconf-budapest-2019" target="_blank">Tickets</a>
+    {% assign live_speakers = site.speakers | where:'live', true %}{% if live_speakers.size > 0 %}<a href="{% link speakers.html %}">Speakers</a>{% endif %}
+    </nav>
+  </header>
+
+  {{ content }}
+
+</main>
+
+<footer>
+  <p>CSSConf Budapest welcomes everybody. Please, be excellent to each other, and read our
+    <a href="{{ "code-of-conduct.html" | relative_url }}">Code of Conduct</a> so that we are on the same page on what excellent means.</p>
+
+  <p>We value your privacy and take good care of the data you trust on us. Our <a href="{{ "privacy-policy.html" | relative_url }}">privacy policy</a> explains what we do with it.</p>
+
+  <p>See something broken on this page? Issues and PRs welcome on its <a href="https://github.com/JSConfBp/2019.cssconfbp.rocks" target="_blank">GitHub</a> page</p>
+</footer>

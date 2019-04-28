@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="bg"></div>
+
+{% assign live_speakers = site.speakers | sort:"position" | where:'live', true %}
+{% for speaker in live_speakers %}
+  <section class="speaker speaker-card">
+    <div class="speaker-pic">
+      <a href="{{ speaker.url }}"><img src="{{ speaker.pic }}" alt="{{ speaker.name }}"></a>
+    </div>
+    <div class="speaker-desc">
+      <a class="speaker-link" href="{{ speaker.url }}">
+        <h2 class="speaker-name">{{ speaker.name }}</h2>
+        <p class="speaker-title">{{ speaker.title }}</p>
+      </a>
+    </div>
+  </section>
+{% endfor %}
+{% if live_speakers.size < 9 %}
+<section class="speaker speaker-card">
+  <div class="speaker-pic">
+    <img class="placeholder-pic" src="{{ 'assets/speakers/someone.jpg' | relative_url }}" alt="someone">
+  </div>
+  <div class="speaker-desc">
+    <p class="speaker-title">
+      More names coming every day!
+      <a href="https://twitter.com/cssconfbudapest">Follow us at @cssconfbudapest</a> for updates.
+    </p>
+  </div>
+</section>
+{% endif %}
