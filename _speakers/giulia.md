@@ -1,7 +1,7 @@
 ---
 name: Giulia Cardieri
 pic: /assets/speakers/fotogiulia.jpg
-live: true
+live: false
 twitter: ggiulia
 github: giuliacardieri
 website: https://giuliacardieri.com
