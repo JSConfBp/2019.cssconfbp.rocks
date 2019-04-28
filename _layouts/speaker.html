@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+  <div class="bg"></div>
+
+  <section class="speaker speaker-page">
+    <div class="speaker-pic">
+      <img src="{{ page.pic }}" alt="{{ page.name }}">
+    </div>
+    <div class="speaker-desc">
+      <h2 class="speaker-name">{{ page.name }}</h2>
+      <p class="speaker-title">{{ page.title }}</p>
+    </div>
+  </section>
+
+  <section class="about abstract">
+    {{ content }}
+  </section>
+
+  <aside class="stats">
+    <ul>
+      {% if page.company %}<li> works at: {{ page.company }} </li>{% endif %}
+      {% if page.twitter %}<li> twitter: <a href="https://twitter.com/{{ page.twitter }}">{{ page.twitter }}</a></li>{% endif %}
+      {% if page.github %}<li> github: <a href="https://github.com/{{ page.github }}">{{ page.github }}</a></li>{% endif %}
+      {% if page.website %}<li> website: <a href="{{ page.website }}">{{ page.website }}</a></li>{% endif %}
+    </ul>
+  </aside>
+
+  <section class="about bio">
+    <h1>Bio</h1>
+    {{ page.bio }}
+  </section>
