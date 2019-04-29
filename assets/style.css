@@ -377,18 +377,14 @@ footer p {
 }
 
 @media (min-width: 970px) {
-  .speaker-page {
-    grid-column: 1 / span 9;
-    grid-row: 3;
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    grid-template-areas: "pic pic pic pic  . . . . ." "pic pic pic pic desc desc desc desc desc";
-    align-items: start;
+  .speaker-page-pic {
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 2;
+    align-self: end;
   }
-  .speaker-page .speaker-desc {
+  .speaker-page-desc {
+    grid-column: 5 / span 6;
+    grid-row: 3;
     font-size: 2em;
   }
 }

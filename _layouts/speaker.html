@@ -4,15 +4,13 @@ layout: default
 
   <div class="bg"></div>
 
-  <section class="speaker speaker-page">
-    <div class="speaker-pic">
-      <img src="{{ page.pic }}" alt="{{ page.name }}">
-    </div>
-    <div class="speaker-desc">
-      <h2 class="speaker-name">{{ page.name }}</h2>
-      <p class="speaker-title">{{ page.title }}</p>
-    </div>
-  </section>
+  <div class="speaker-pic  speaker-page-pic">
+    <img src="{{ page.pic }}" alt="{{ page.name }}">
+  </div>
+  <div class="speaker-desc  speaker-page-desc">
+    <h2 class="speaker-name">{{ page.name }}</h2>
+    <p class="speaker-title">{{ page.title }}</p>
+  </div>
 
   <section class="about abstract">
     {{ content }}
