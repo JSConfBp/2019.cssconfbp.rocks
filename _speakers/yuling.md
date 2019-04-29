@@ -5,7 +5,7 @@ company: Theodo
 live: false
 twitter: YuLingEC
 github: YuLingCheng
-title: "Building Better Products Faster: DevUx is the new DevOps"
+talktitle: "Building Better Products Faster: DevUx is the new DevOps"
 bio: |
   What attracted Yu Ling to web development was being able to get visible results quickly. After an 8-month entrepreneurial adventure she joined Theodo to sharpen her CTO skills and build apps to grow businesses. Today, as a lead developer, she puts her energy on making her dreams of flawless Dev-Ux collaboration come true.
 

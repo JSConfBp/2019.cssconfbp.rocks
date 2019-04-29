@@ -5,7 +5,7 @@ live: false
 twitter: malchata
 github: malchata
 website: https://jeremy.codes/
-title: The Weird (yet Practical) World of CSS Paint Worklets
+talktitle: The Weird (yet Practical) World of CSS Paint Worklets
 bio: Jeremy is a web developer from Minnesota. He works as an independent web performance web consultant who writes and speaks about making the web faster. He has written for publications such as A List Apart, Smashing Magazine, CSS-Tricks, and others.
 position: 9
 layout: speaker

@@ -5,7 +5,7 @@ company: Outfittery
 live: false
 twitter: thecakedesk
 github: lelith
-title: CSS in JS - beware the Hype!
+talktitle: CSS in JS - beware the Hype!
 bio: I am a frontend engineer of more than 10 years. I currently live in Berlin where I am also a Mentor for female students. I always want to share my passion about frontend with everyone.
 position: 4
 layout: speaker

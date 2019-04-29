@@ -6,7 +6,7 @@ live: false
 twitter: alanstearns
 github: astearns
 website: http://seattle-odl.org/
-title: Getting Browser Bugs Fixed
+talktitle: Getting Browser Bugs Fixed
 bio: Web standards and web component development at Adobe, Co-chair of the CSS Working Group at the W3C
 position: 6
 layout: speaker

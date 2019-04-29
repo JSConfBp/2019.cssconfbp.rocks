@@ -1,14 +1,15 @@
 ---
 name: Giulia Cardieri
 pic: /assets/speakers/fotogiulia.jpg
-live: false
+live: true
 twitter: ggiulia
 github: giuliacardieri
 website: https://giuliacardieri.com
-title: "CSS Games and Drawings in the Real World: Useful or Just Fun?"
+talktitle: "CSS Games and Drawings in the Real World: Useful or Just Fun?"
 bio: Giulia is a Front-end Developer at Toptal. She is a CSS enthusiast that enjoys developing small and fun projects that assist in learning new technologies (like her dinosaur that speaks a mysterious language). She enjoys joining initiatives to make the technology field more welcoming to women, such as joining the organization team of Rails Girls Sorocaba.
 position: 1
 layout: speaker
+shareimg: /assets/speakers/giulia-share.png
 ---
 
 How did you learn CSS? The standard way is in a class, online course, or even during an internship - but what if I told you that you can learn it by making a game. Don't believe me? Well, I conducted a survey with developers that pointed out 100% of the people that made a CSS game or drawing learned something new in the process.

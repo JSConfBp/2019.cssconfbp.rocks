@@ -6,7 +6,7 @@ live: false
 twitter: xavxyz
 github: xavxyz
 website: https://codepen.io/xavxyz
-title: The Path to SVG Animations
+talktitle: The Path to SVG Animations
 bio: Xavier Cazalot is an engineer who used to craft skateboards. When he is not unfolding a travel story, he is prototyping on weird digital experiences.
 position: 5
 layout: speaker

@@ -5,7 +5,7 @@ live: false
 twitter: iamhiwelo
 github: hiwelo
 website: https://raccoon.studio
-title: "Variable Fonts & Readability: The Rising of Custom Reading Experiences"
+talktitle: "Variable Fonts & Readability: The Rising of Custom Reading Experiences"
 bio: Damien is a queer product designer focusing on accessibility and fighting for a more inclusive web. Speaker in Europe, they talk in web conferences about using design and CSS to craft more inclusive experiences. Senior Product Designer for Castor EDC in Amsterdam, their inner self is a wild raccoon.
 position: 3
 layout: speaker
