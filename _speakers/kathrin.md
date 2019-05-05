@@ -2,13 +2,14 @@
 name: Kathrin Holzmann
 pic: /assets/speakers/kathrin.jpg
 company: Outfittery
-live: false
+live: true
 twitter: thecakedesk
 github: lelith
 talktitle: CSS in JS - beware the Hype!
 bio: I am a frontend engineer of more than 10 years. I currently live in Berlin where I am also a Mentor for female students. I always want to share my passion about frontend with everyone.
 position: 4
 layout: speaker
+shareimg: /assets/speakers/kathrin-share.png
 ---
 
 Everyone is hyped about CSS in JS - but is it really worth the hype? Or are there already ways to solve the Problems - maybe even in a better way?
