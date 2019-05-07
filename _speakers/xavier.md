@@ -2,7 +2,7 @@
 name: Xavier Cazalot
 pic: https://pbs.twimg.com/profile_images/1097456113811968000/5cVrR6Bk_400x400.jpg
 company: The Culture — Creative Collective
-live: false
+live: true
 twitter: xavxyz
 github: xavxyz
 website: https://codepen.io/xavxyz
@@ -10,6 +10,7 @@ talktitle: The Path to SVG Animations
 bio: Xavier Cazalot is an engineer who used to craft skateboards. When he is not unfolding a travel story, he is prototyping on weird digital experiences.
 position: 5
 layout: speaker
+shareimg: /assets/speakers/xavier-share.png
 ---
 
 Using SVG in the websites or the products we create is a great way to provide a delightful experience to our users.
