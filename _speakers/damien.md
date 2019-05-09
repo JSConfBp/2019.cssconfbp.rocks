@@ -1,6 +1,6 @@
 ---
 name: Damien Senger
-pic: https://pbs.twimg.com/profile_images/1029480793293377536/PvGHiTTT.jpg
+pic: https://pbs.twimg.com/profile_images/1124623417150517248/QNniJ9hm.jpg
 live: true
 twitter: iamhiwelo
 github: hiwelo
