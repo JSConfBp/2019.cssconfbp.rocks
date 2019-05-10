@@ -5,12 +5,12 @@ live: false
 twitter: malchata
 github: malchata
 website: https://jeremy.codes/
-talktitle: The Weird (yet Practical) World of CSS Paint Worklets
+talktitle: The Weird — Yet Practical — World of Paint Worklets
 bio: Jeremy is a web developer from Minnesota. He works as an independent web performance web consultant who writes and speaks about making the web faster. He has written for publications such as A List Apart, Smashing Magazine, CSS-Tricks, and others.
 position: 9
 layout: speaker
 ---
 
-"Of all the parts of Houdini, paint worklets are arguably the coolest. Imagine if you started with the Canvas API, but then made it embeddable in—and parameterized by—CSS. This is the quirky sort of marriage that can only lead to best kind of fun and experimentation the internet is known for.
+Of all the fun stuff in Houdini, paint worklets are arguably the most fun. It’s blends what’s great about the Canvas API, and makes the art you can create with it easily usable in CSS. Such a blend of technologies can only lead to very best kind of fun and experimentation the web is known for.
 
-Come to this session and you'll not only understand how paint worklets, well, work, but also what's possible when you fuse the programatic generation of art with your designs. By the end of this talk, you'll not only discover what's fun about paint worklets, but also what's practical."
+Come to this session and you’ll understand how paint worklets, well, work. But the really good stuff will be in all the inspired experimentation that can come from experimenting with the programatic generation of art and graphics, and how we can practically use it in our designs. If the intersection between weird and usable is your thing, you’ll feel right at home with paint worklets!
