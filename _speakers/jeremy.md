@@ -6,7 +6,7 @@ twitter: malchata
 github: malchata
 website: https://jeremy.codes/
 talktitle: The Weird — Yet Practical — World of Paint Worklets
-bio: Jeremy is a web developer from Minnesota. He works as an independent web performance web consultant who writes and speaks about making the web faster. He has written for publications such as A List Apart, Smashing Magazine, CSS-Tricks, and others.
+bio: Jeremy Wagner is an independent web performance consultant, author, and speaker from Minnesota doing his level best to make the web faster for everyone, everywhere.
 position: 9
 layout: speaker
 ---
