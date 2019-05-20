@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+  <div class="bg"></div>
+
+  <div class="speaker-pic  speaker-page-pic">
+    <img src="{{ page.pic }}" alt="{{ page.name }}">
+  </div>
+  <div class="speaker-desc  speaker-page-desc">
+    <h2 class="speaker-name">{{ page.name1 }} & {{ page.name2 }}</h2>
+    <p class="speaker-title">{{ page.talktitle }}</p>
+  </div>
+
+  <section class="about abstract">
+    {{ content }}
+  </section>
+
+  <aside class="stats">
+    <h1>{{ page.name1 }}</h1>
+    <ul>
+      {% if page.company %}<li> works at: {{ page.company }} </li>{% endif %}
+      {% if page.twitter %}<li> twitter: <a href="https://twitter.com/{{ page.twitter }}">{{ page.twitter }}</a></li>{% endif %}
+      {% if page.github %}<li> github: <a href="https://github.com/{{ page.github }}">{{ page.github }}</a></li>{% endif %}
+      {% if page.website %}<li> website: <a href="{{ page.website }}">{{ page.website }}</a></li>{% endif %}
+    </ul>
+  </aside>
+
+  <aside class="stats two">
+    <h1>{{ page.name2 }}</h1>
+    <ul>
+      {% if page.company2 %}<li> works at: {{ page.company2 }} </li>{% endif %}
+      {% if page.twitter2 %}<li> twitter: <a href="https://twitter.com/{{ page.twitter2 }}">{{ page.twitter2 }}</a></li>{% endif %}
+      {% if page.github2 %}<li> github: <a href="https://github.com/{{ page.github2 }}">{{ page.github2 }}</a></li>{% endif %}
+      {% if page.website2 %}<li> website: <a href="{{ page.website2 }}">{{ page.website2 }}</a></li>{% endif %}
+    </ul>
+  </aside>
+
+  <section class="about bio">
+    <h1>Bio - {{ page.name1 }}</h1>
+    {{ page.bio }}
+  </section>
+
+  <section class="about bio two">
+    <h1>Bio - {{ page.name2 }}</h1>
+    {{ page.bio2 }}
+  </section>

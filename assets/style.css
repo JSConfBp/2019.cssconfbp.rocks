@@ -221,8 +221,7 @@ header {
 
 aside h1 {
   font-family: 'Rubik Mono One', Rubik, sans-serif;
-  margin-bottom: 1em;
-  font-size: 1.4em;
+  font-size: 1em;
 }
 
 .single {
@@ -400,6 +399,10 @@ footer p {
   grid-column: 3 / -3;
 }
 
+.bio.two {
+  grid-row-start: 8;
+}
+
 .bio h1 {
   font-family: 'Rubik Mono One', Rubik, sans-serif;
   margin-bottom: 20px;
@@ -407,6 +410,13 @@ footer p {
 
 .stats {
   grid-row-start: 5;
+  text-align: left;
+  font-family: inherit;
+  padding-bottom: 5px;
+}
+
+.stats.two {
+  grid-row-start: 6;
   text-align: left;
   font-family: inherit;
   padding-bottom: 5px;
