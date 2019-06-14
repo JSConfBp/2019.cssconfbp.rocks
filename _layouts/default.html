@@ -2,6 +2,12 @@
 layout: plain
 ---
 
+{% if page.banner %}
+  <a href="{{ bannerlink }}" class="bannerlink">
+    <marquee class="banner"> {{ page.banner }} </marquee>
+  </a>
+{% endif %}
+
 <main>
   <header>
     <h1 class="logo">CSSConf

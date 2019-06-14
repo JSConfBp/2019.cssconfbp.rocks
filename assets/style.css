@@ -107,6 +107,20 @@ aside {
   grid-row: 4;
 }
 
+.bannerlink {
+  position: relative;
+  display: block;
+}
+
+.banner {
+  background: black;
+  color: white;
+  display: block;
+  padding: 10px 20px;
+  line-height: 1.2;
+  font-size: .8em;
+  margin: 0;
+}
 
 /* DETAILS */
 
