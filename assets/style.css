@@ -108,8 +108,9 @@ aside {
 }
 
 .bannerlink {
-  position: relative;
+  position: fixed;
   display: block;
+  z-index: 2;
 }
 
 .banner {
