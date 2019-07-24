@@ -153,6 +153,12 @@ ul, ol {
   margin-left: 1em;
 }
 
+.crop {
+  text-overflow: ellipsis;
+  display: block;
+  overflow: hidden;
+}
+
 header {
   padding-top: 100px;
   font-size: 30px;

@@ -21,7 +21,7 @@ layout: default
       {% if page.company %}<li> works at: {{ page.company }} </li>{% endif %}
       {% if page.twitter %}<li> twitter: <a href="https://twitter.com/{{ page.twitter }}">{{ page.twitter }}</a></li>{% endif %}
       {% if page.github %}<li> github: <a href="https://github.com/{{ page.github }}">{{ page.github }}</a></li>{% endif %}
-      {% if page.website %}<li> website: <a href="{{ page.website }}">{{ page.website }}</a></li>{% endif %}
+      {% if page.website %}<li> website: <a href="{{ page.website }}" title="{{ page.website }}" class="crop">{{ page.website }}</a></li>{% endif %}
     </ul>
   </aside>
 
