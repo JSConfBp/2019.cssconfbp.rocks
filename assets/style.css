@@ -199,6 +199,8 @@ header {
 
 .menu {
   position: relative;
+  font-size: 50%;
+  color: rgba(240,93,94,0.3);
 }
 
 .about, .series, aside {
