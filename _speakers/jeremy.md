@@ -6,7 +6,7 @@ twitter: malchata
 github: malchata
 website: https://jeremy.codes/
 talktitle: The Weird — Yet Practical — World of Paint Worklets
-bio: Jeremy Wagner is an independent web performance consultant, author, and speaker from Minnesota doing his level best to make the web faster for everyone, everywhere.
+bio: Jeremy Wagner is a web performance consultant working for <a href="https://siteimprove.com/" target="_blank">Siteimprove</a> in The United States. He frequently <a href="https://speaking.jeremy.codes/" target="_blank">speaks</a> and <a href="https://jeremy.codes/writing/" target="_blank">writes</a> about the web, and the importance of making it faster and more usable for everyone, everywhere.
 position: 9
 layout: speaker
 shareimg: /assets/speakers/jeremy-share.png
