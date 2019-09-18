@@ -1,0 +1,104 @@
+[
+  {
+    "name": "Mozilla",
+    "level": "platinum",
+    "link": "https://mozilla.com",
+    "image": "mozilla"
+  },
+  {
+    "name": "Oracle",
+    "level": "platinum",
+    "link": "https://oracle.com",
+    "image": "oracle"
+  },
+  {
+    "name": "Tresorit",
+    "level": "platinum",
+    "link": "https://tresorit.com",
+    "image": "tresorit"
+  },
+  {
+    "name": "Vacuumlabs",
+    "level": "platinum",
+    "link": "https://vacuumlabs.com/",
+    "image": "vacuumlabs"
+  },
+  {
+    "name": "BlackRock",
+    "level": "gold",
+    "link": "https://www.blackrock.com/hu/egyeni-befektetok/careers/budapest-recruiting?locale=hu_HU&switchLocale=y&siteEntryPassthrough=true",
+    "image": "blackrock"
+  },
+  {
+    "name": "Bonomi",
+    "level": "gold",
+    "link": "https://bonomi.io/",
+    "image": "bonomi"
+  },
+  {
+    "name": "EPAM",
+    "level": "gold",
+    "link": "https://www.epam.com/",
+    "image": "epam"
+  },
+  {
+    "name": "instructure",
+    "level": "gold",
+    "link": "https://www.instructure.com/budapest",
+    "image": "instructure"
+  },
+  {
+    "name": "Microsoft",
+    "level": "gold",
+    "link": "https://microsoft.com/",
+    "image": "microsoft"
+  },
+  {
+    "name": "Mito",
+    "level": "gold",
+    "link": "https://mito.hu/",
+    "image": "mito"
+  },
+  {
+    "name": "Outfittery",
+    "level": "silver",
+    "link": "https://www.outfittery.com/",
+    "image": "outfittery"
+  },
+  {
+    "name": "RisingStack",
+    "level": "gold",
+    "link": "https://risingstack.com/",
+    "image": "risingstack"
+  },
+  {
+    "name": "SinnerSchrader",
+    "level": "scholarship",
+    "link": "https://sinnerschrader.com",
+    "image": "sinnerschrader"
+  },
+  {
+    "name": "Snyk",
+    "level": "silver",
+    "link": "https://snyk.io",
+    "image": "snyk"
+  },
+  {
+    "name": "SuperCharge",
+    "level": "gold",
+    "link": "https://supercharge.io/",
+    "image": "supercharge"
+  },
+  {
+    "name": "Twilio",
+    "level": "gold",
+    "link": "https://twilio.com",
+    "image": "twilio"
+  },
+  {
+    "name": "Zalando",
+    "level": "scholarship",
+    "link": "https://jobs.zalando.com/tech/",
+    "image": "zalando"
+  }
+]

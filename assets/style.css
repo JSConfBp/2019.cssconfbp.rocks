@@ -3,24 +3,20 @@
 * Author: @hubudibu
 */
 
-
 /* RESET */
-
- html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
- strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
- figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 /* FRAME */
 
 body::before {
-  content: '';
+  content: "";
   position: fixed;
   top: 0;
   bottom: 0;
@@ -32,19 +28,20 @@ body::before {
 
 /* LAYOUT */
 
-
 main {
   overflow: hidden;
   padding: 0 40px 40px;
 }
 
-header, aside {
+header,
+aside {
   margin-top: 1em;
   margin-bottom: 1em;
 }
 
 @media (min-width: 970px) {
-  header, aside {
+  header,
+  aside {
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -62,10 +59,10 @@ header, aside {
     padding: 0 20px;
   }
   main::after {
-    content: '';
+    content: "";
     z-index: -1;
     position: relative;
-    background: linear-gradient(lavender,azure);
+    background: linear-gradient(lavender, azure);
     background-attachment: fixed;
     grid-column: 4 / -1;
     grid-row: 1 / span 5;
@@ -73,7 +70,7 @@ header, aside {
   .bg {
     z-index: -1;
     position: relative;
-    background: linear-gradient(lavender,azure);
+    background: linear-gradient(lavender, azure);
     background-attachment: fixed;
     grid-column: 2 / -1;
     grid-row: 2 / span 7;
@@ -119,12 +116,11 @@ aside {
   display: block;
   padding: 10px 20px;
   line-height: 1.2;
-  font-size: .8em;
+  font-size: 0.8em;
   margin: 0;
 }
 
 /* DETAILS */
-
 
 body {
   min-height: 100vh;
@@ -137,19 +133,24 @@ body {
   }
 }
 
-a, .link {
+a,
+.link {
   /* color: tomato; */
   /* color: salmon; */
-  color: #F05D5E;
+  color: #f05d5e;
   text-decoration: none;
 }
 
-p, q, ul, ol {
+p,
+q,
+ul,
+ol {
   display: block;
   margin-bottom: 1em;
 }
 
-ul, ol {
+ul,
+ol {
   margin-left: 1em;
 }
 
@@ -165,7 +166,7 @@ header {
 
 .title {
   font-size: 30px;
-  font-family: 'Rubik Mono One', Rubik, sans-serif;
+  font-family: "Rubik Mono One", Rubik, sans-serif;
   line-height: 1;
 }
 @media (min-width: 650px) {
@@ -182,13 +183,14 @@ header {
 }
 
 @media (min-width: 400px) {
-  .logo, .menu {
+  .logo,
+  .menu {
     white-space: pre-line;
   }
 }
 
 .logo::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 3em;
   left: -2.6em;
@@ -203,10 +205,12 @@ header {
 .menu {
   position: relative;
   font-size: 50%;
-  color: rgba(240,93,94,0.3);
+  color: rgba(240, 93, 94, 0.3);
 }
 
-.about, .series, aside {
+.about,
+.series,
+aside {
   padding: 20px;
 }
 
@@ -215,12 +219,13 @@ header {
   background: white;
 }
 
-.series, aside {
+.series,
+aside {
   font-family: Lora, serif;
   align-self: start;
   position: relative;
 
-  background: linear-gradient(lavender,azure);
+  background: linear-gradient(lavender, azure);
   background-attachment: fixed;
 }
 
@@ -236,15 +241,15 @@ header {
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   padding: 60px 0;
-  background: #F05D5E;
-    margin-top: -20px;
+  background: #f05d5e;
+  margin-top: -20px;
 }
 
 .speakers .title {
   grid-column-start: 1;
   grid-column-end: -1;
   text-align: center;
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .speakers .speaker-card::before {
@@ -252,7 +257,9 @@ header {
 }
 
 @media (min-width: 970px) {
-  .about, .series, aside {
+  .about,
+  .series,
+  aside {
     background: white;
     font-size: 30px;
   }
@@ -262,14 +269,14 @@ header {
 }
 
 .series::before {
-  content: '❝';
-  font-family: 'Rubik Mono One', Rubik, sans-serif;
+  content: "❝";
+  font-family: "Rubik Mono One", Rubik, sans-serif;
   text-indent: -0.7em;
   display: inline-block;
 }
 
 aside h1 {
-  font-family: 'Rubik Mono One', Rubik, sans-serif;
+  font-family: "Rubik Mono One", Rubik, sans-serif;
   font-size: 1em;
 }
 
@@ -310,18 +317,21 @@ footer p {
 }
 
 @media (min-width: 650px) {
-  .series, aside, footer {
+  .series,
+  aside,
+  footer {
     font-size: 22px;
   }
 }
 @media (min-width: 970px) {
-  .series, aside, footer {
+  .series,
+  aside,
+  footer {
     font-size: 22px;
   }
 }
 
 /* SPEAKERS */
-
 
 .speaker-pic {
   border: 20px solid white;
@@ -344,14 +354,14 @@ footer p {
   }
 
   .speaker-card::before {
-    content: '';
+    content: "";
     position: absolute;
     z-index: -1;
     top: -20px;
     right: -20px;
     bottom: -20px;
     left: -20px;
-    background: linear-gradient(lavender,azure);
+    background: linear-gradient(lavender, azure);
     background-attachment: fixed;
   }
 
@@ -360,16 +370,24 @@ footer p {
   }
 }
 
-.speaker-card:nth-of-type(2n+1) {
+.speaker-card:nth-of-type(2n + 1) {
   grid-column-start: 2;
 }
 
 .speaker-card:nth-of-type(1),
-.speaker-card:nth-of-type(9) { grid-column-start: 1; }
-.speaker-card:nth-of-type(5) { grid-column-start: 3; }
+.speaker-card:nth-of-type(9) {
+  grid-column-start: 1;
+}
+.speaker-card:nth-of-type(5) {
+  grid-column-start: 3;
+}
 
-.speaker-pic { grid-area: pic; }
-.speaker-desc { grid-area: desc; }
+.speaker-pic {
+  grid-area: pic;
+}
+.speaker-desc {
+  grid-area: desc;
+}
 
 .speaker-pic img {
   max-width: 100%;
@@ -377,19 +395,19 @@ footer p {
 }
 
 .speaker-desc {
-  background: linear-gradient(lavender,azure);
+  background: linear-gradient(lavender, azure);
   background-attachment: fixed;
   padding: 20px 20px 5px;
 }
 
 .speaker-link {
   color: black;
-  transition: color .2s;
+  transition: color 0.2s;
 }
 
 .speaker-link:hover,
 .speaker-link:focus {
-  color: #F05D5E;
+  color: #f05d5e;
 }
 
 .speaker-title {
@@ -406,7 +424,7 @@ footer p {
 
 .speaker-name,
 .page-title {
-  font-family: 'Rubik Mono One', Rubik, sans-serif;
+  font-family: "Rubik Mono One", Rubik, sans-serif;
   line-height: 1.3;
 }
 
@@ -437,8 +455,6 @@ footer p {
   }
 }
 
-
-
 .abstract {
   grid-row-start: 4;
 }
@@ -453,7 +469,7 @@ footer p {
 }
 
 .bio h1 {
-  font-family: 'Rubik Mono One', Rubik, sans-serif;
+  font-family: "Rubik Mono One", Rubik, sans-serif;
   margin-bottom: 20px;
 }
 
@@ -477,7 +493,7 @@ footer p {
 }
 
 .stats li::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 13px;
   left: -1.1em;
@@ -486,4 +502,59 @@ footer p {
   border-radius: 13px;
   transform: rotate(-45deg);
   border: 2px solid;
+}
+
+/* SPONSORS */
+
+.sponsors {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  padding: 20px 40px;
+  align-items: center;
+  border-top: 20px solid;
+}
+
+.sponsor-img {
+  display: block;
+  width: 100%;
+}
+
+.sponsor-title {
+  grid-column: 2 / -1;
+  margin-bottom: 20px;
+}
+
+.sponsor-copy {
+  grid-column: 7 / -1;
+  padding: 20px;
+  background: linear-gradient(lavender, azure);
+  background-attachment: fixed;
+}
+
+.sponsor-platinum {
+  grid-column-end: span 2;
+}
+
+.sponsor-header {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 970px) {
+  .sponsors {
+    grid-template-columns: repeat(12, 1fr);
+    padding: 40px 40px;
+  }
+  .sponsor-header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 20px;
+  }
+  .sponsor {
+    grid-column-end: span 2;
+  }
+  .sponsor-platinum {
+    grid-column-end: span 3;
+  }
 }

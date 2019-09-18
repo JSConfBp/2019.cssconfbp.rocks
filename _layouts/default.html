@@ -26,6 +26,24 @@ layout: plain
 
 </main>
 
+{% if page.sponsors %}
+<section class="sponsors">
+  <div class="sponsor-header">
+    <h1 class="title sponsor-title">
+      Sponsors
+    </h1>
+    <p class="sponsor-copy">
+      CSSConf Budapest works hard to bring you a memorable experience, while keeping our ticket prices accessible is just as important. These are the wonderful companies who made that possible this year. We are always grateful for their generosity, and for our big brother JSConf Budapest for making the introductions in their <a href=" https://jsconfbp.com/sponsorship/" target="_blank">sponsorship programme</a>.
+    </p>
+  </div>
+  {% for sponsor in site.data.sponsors %}
+  <a href="{{ sponsor.link }}" alt="{{ sponsor.name }}" class="sponsor sponsor-{{ sponsor.level }}">
+    <img class="sponsor-img" src="/assets/sponsors/{{ sponsor.image }}.png" />
+  </a>
+  {% endfor %}
+</section>
+{% endif %}
+
 <footer>
   <p>CSSConf Budapest welcomes everybody. Please, be excellent to each other, and read our
     <a href="{{ "code-of-conduct.html" | relative_url }}">Code of Conduct</a> so that we are on the same page on what excellent means.</p>
