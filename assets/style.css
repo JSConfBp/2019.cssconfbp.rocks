@@ -161,12 +161,15 @@ ul, ol {
 
 header {
   padding-top: 100px;
+}
+
+.title {
   font-size: 30px;
   font-family: 'Rubik Mono One', Rubik, sans-serif;
   line-height: 1;
 }
 @media (min-width: 650px) {
-  header {
+  .title {
     font-size: 70px;
   }
 }
@@ -223,6 +226,29 @@ header {
 
 .series {
   line-height: 1.7;
+}
+
+.speakers {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  padding: 60px 0;
+  background: #F05D5E;
+    margin-top: -20px;
+}
+
+.speakers .title {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  text-align: center;
+    margin-bottom: 60px;
+}
+
+.speakers .speaker-card::before {
+  display: none;
 }
 
 @media (min-width: 970px) {
