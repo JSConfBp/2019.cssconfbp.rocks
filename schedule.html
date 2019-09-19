@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<div class="bg"></div>
+
+{% assign startTime = "08:00" %}
+
+{% for program in site.data.schedule %}
+
+  {% assign duration = program.duration | times: 60 %}
+  {% assign endTime = startTime | date: "%s" | plus: duration | date: "%H:%M" %}
+
+
+  <section class="speaker speaker-card schedule schedule-{{ program.side }}">
+  {% if program.speaker %}
+    {% assign speaker = site.speakers | where:"path", program.speaker | first %}
+    <div class="speaker-pic">
+      <a href="{{ speaker.url }}"
+        ><img src="{{ speaker.pic }}" alt="{{ speaker.name }}"
+      /></a>
+    </div>
+    <div class="timestamp">{{ startTime }} - {{ endTime }}</div>
+    <div class="speaker-desc">
+      <a class="speaker-link" href="{{ speaker.url }}">
+        <h2 class="speaker-name">{{ speaker.name }}</h2>
+        <p class="speaker-title">{{ speaker.talktitle }}</p>
+      </a>
+    </div>
+  {% else %}
+    <div class="speaker-pic">
+      <a href="{{ program.link }}"
+        ><img src="{{ program.image }}" alt="{{ program.title }}"
+      /></a>
+    </div>
+    <div class="timestamp">{{ startTime }} - {{ endTime }}</div>
+    <div class="speaker-desc">
+      <a class="speaker-link" href="{{ program.link }}">
+        <h2 class="speaker-name">{{ program.title }}</h2>
+        <p class="speaker-title">{{ program.desc }}</p>
+      </a>
+    </div>
+  {% endif %}
+  </section>
+
+  {% assign startTime = endTime %}
+
+{% endfor %}

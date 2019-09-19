@@ -1,0 +1,103 @@
+[
+  {
+    "title": "Doors Open & Registration",
+    "desc": "Breakfast by Vacuumlabs <br /> specialty coffee by Trezorit",
+    "duration": 90,
+    "image": "/assets/csscbp.png",
+    "side": "out"
+  },
+  {
+    "title": "Opening CSSConf Budapest 2019",
+    "desc": "Intro by our MC Chen Hui Jing, <br /> Performance by Live:JS <br /> local guest artist Tibor Szasz<br /> and music from halfbyte",
+    "duration": 20,
+    "image": "/assets/csscbp.png",
+    "side": "in"
+  },
+  {
+    "speaker": "_speakers/giulia.md",
+    "duration": 30,
+    "side": "in"
+  },
+  {
+    "speaker": "_speakers/damien.md",
+    "duration": 30,
+    "side": "in"
+  },
+  {
+    "speaker": "_speakers/jeremy.md",
+    "duration": 30,
+    "side": "in"
+  },
+  {
+    "title": "Coffee Break by Trezorit",
+    "desc": "New CSS Features Mozilla Minutes panel <br /> in the Moz Lounge",
+    "duration": 45,
+    "image": "/assets/csscbp.png",
+    "side": "out"
+  },
+  {
+    "speaker": "_speakers/mike.md",
+    "duration": 30,
+    "side": "in"
+  },
+  {
+    "speaker": "_speakers/david.md",
+    "duration": 30,
+    "side": "in"
+  },
+  {
+    "title": "Lunch Break by Vacuumlabs",
+    "desc": "Accessible Web Mozilla Minutes panel <br /> in the Moz Lounge",
+    "duration": 90,
+    "image": "/assets/csscbp.png",
+    "side": "out"
+  },
+  {
+    "speaker": "_speakers/steven.md",
+    "duration": 30,
+    "side": "in"
+  },
+  {
+    "speaker": "_speakers/kathrin.md",
+    "duration": 30,
+    "side": "in"
+  },
+  {
+    "title": "Coffee Break by Trezorit",
+    "desc": "",
+    "duration": 40,
+    "image": "/assets/csscbp.png",
+    "side": "out"
+  },
+  {
+    "speaker": "_speakers/alan.md",
+    "duration": 30,
+    "side": "in"
+  },
+  {
+    "speaker": "_speakers/yuling.md",
+    "duration": 30,
+    "side": "in"
+  },
+  {
+    "title": "Dinner by Vacuumlabs",
+    "desc": "",
+    "duration": 135,
+    "image": "/assets/csscbp.png",
+    "side": "out"
+  },
+  {
+    "title": "Closing CSSConf Budapest 2019",
+    "desc": "Closing by our MC Chen Hui Jing,<br /> and a family photo with you",
+    "duration": 30,
+    "image": "/assets/csscbp.png",
+    "side": "in"
+  },
+  {
+    "title": "Closing Party with LiveJS",
+    "desc": "Visuals by local guest artist Andras Nyarai<br /> and Music from halfbyte",
+    "duration": 240,
+    "image": "/assets/csscbp.png",
+    "side": "out"
+  }
+]
