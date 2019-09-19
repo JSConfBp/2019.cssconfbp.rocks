@@ -16,10 +16,12 @@ layout: plain
       September
       25
     </h1>
+    {% unless page.hidenav %}
     <nav class="menu">{% assign live_speakers = site.speakers | where:'live', true %}{% if live_speakers.size > 0 %}<a href="{% link speakers.html %}">Speakers</a>{% endif %}
       <small>Tickets gone</small>
       <small>Schedule soon</small>
     </nav>
+    {% endunless %}
   </header>
 
   {{ content }}

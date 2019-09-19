@@ -6,7 +6,7 @@ layout: default
 
 {% assign live_speakers = site.speakers | sort:"position" | where:'live', true %}
 {% for speaker in live_speakers %}
-  <section class="speaker speaker-card">
+  <section class="card speaker-card">
     <div class="speaker-pic">
       <a href="{{ speaker.url }}"><img src="{{ speaker.pic }}" alt="{{ speaker.name }}"></a>
     </div>
@@ -19,7 +19,7 @@ layout: default
   </section>
 {% endfor %}
 {% if live_speakers.size < 9 %}
-<section class="speaker speaker-card">
+<section class="card speaker-card">
   <div class="speaker-pic">
     <img class="placeholder-pic" src="{{ 'assets/speakers/someone.jpg' | relative_url }}" alt="someone">
   </div>

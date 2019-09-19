@@ -1,7 +1,7 @@
 [
   {
     "title": "Doors Open & Registration",
-    "desc": "Breakfast by Vacuumlabs <br /> specialty coffee by Trezorit",
+    "desc": "Breakfast by Vacuumlabs <br /> specialty coffee by Tresorit",
     "duration": 90,
     "image": "/assets/csscbp.png",
     "side": "out"
@@ -29,9 +29,9 @@
     "side": "in"
   },
   {
-    "title": "Coffee Break by Trezorit",
+    "title": "Coffee Break by Tresorit",
     "desc": "New CSS Features Mozilla Minutes panel <br /> in the Moz Lounge",
-    "duration": 45,
+    "duration": 40,
     "image": "/assets/csscbp.png",
     "side": "out"
   },
@@ -63,9 +63,9 @@
     "side": "in"
   },
   {
-    "title": "Coffee Break by Trezorit",
+    "title": "Coffee Break by Tresorit",
     "desc": "",
-    "duration": 40,
+    "duration": 45,
     "image": "/assets/csscbp.png",
     "side": "out"
   },
@@ -80,18 +80,18 @@
     "side": "in"
   },
   {
-    "title": "Dinner by Vacuumlabs",
-    "desc": "",
-    "duration": 135,
-    "image": "/assets/csscbp.png",
-    "side": "out"
-  },
-  {
     "title": "Closing CSSConf Budapest 2019",
     "desc": "Closing by our MC Chen Hui Jing,<br /> and a family photo with you",
     "duration": 30,
     "image": "/assets/csscbp.png",
     "side": "in"
+  },
+  {
+    "title": "Dinner by Vacuumlabs",
+    "desc": "",
+    "duration": 135,
+    "image": "/assets/csscbp.png",
+    "side": "out"
   },
   {
     "title": "Closing Party with LiveJS",
