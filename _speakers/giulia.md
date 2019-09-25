@@ -2,7 +2,7 @@
 name: Giulia Cardieri
 pic: /assets/speakers/fotogiulia.jpg
 live: true
-twitter: ggiulia
+twitter: giuliacardieri
 github: giuliacardieri
 website: https://giuliacardieri.com
 talktitle: "CSS Games and Drawings in the Real World: Useful or Just Fun?"
