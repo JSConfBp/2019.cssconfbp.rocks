@@ -2,7 +2,7 @@
   {
     "title": "Doors Open & Registration",
     "desc": "Breakfast by Vacuumlabs <br /> specialty coffee by Tresorit",
-    "duration": 90,
+    "duration": 105,
     "image": "/assets/csscbp.png",
     "side": "out"
   },
@@ -20,18 +20,18 @@
   },
   {
     "speaker": "_speakers/damien.md",
-    "duration": 30,
+    "duration": 35,
     "side": "in"
   },
   {
     "speaker": "_speakers/jeremy.md",
-    "duration": 30,
+    "duration": 40,
     "side": "in"
   },
   {
     "title": "Coffee Break by Tresorit",
     "desc": "New CSS Features Mozilla Minutes panel <br /> in the Moz Lounge",
-    "duration": 40,
+    "duration": 20,
     "image": "/assets/csscbp.png",
     "side": "out"
   },
@@ -48,7 +48,7 @@
   {
     "title": "Lunch Break by Vacuumlabs",
     "desc": "Accessible Web Mozilla Minutes panel <br /> in the Moz Lounge",
-    "duration": 90,
+    "duration": 80,
     "image": "/assets/csscbp.png",
     "side": "out"
   },
