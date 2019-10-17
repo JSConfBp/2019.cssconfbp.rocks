@@ -12,12 +12,12 @@ from all participants to help ensuring a safe environment for everybody.
 
 **Don’t be a Jerk. Be excellent.**
 
-## Need Help? Contact Szabolcs
+## Need Help? Contact Freevo
 
-- Szabolcs Szabolcsi-Tóth
-- Twitter: [@cssconfbudapest](https://twitter.com/cssconfbudapest)
-- Email: [nec@jsconfbp.com](mailto:nec@jsconfbp.com)
-- Phone: [+36 70 389 1288](tel:+36703891288)
+- Peter Frivalszky-Mayer
+- Twitter: [@freevo](https://twitter.com/freevo)
+- Email: [freevo@gmail.com](mailto:freevo@gmail.com)
+- Phone: [+36 20 247 8940](tel:+36202478940)
 
 ## The Quick Version
 
